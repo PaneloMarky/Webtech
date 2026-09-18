@@ -1,1 +1,1 @@
-# Webtech
+/DOCTYPE html

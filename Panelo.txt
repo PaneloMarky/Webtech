@@ -1,0 +1,4130 @@
+commit d4ce8c7b297b0d0b7d0893851c6c70e3af46c48c
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-11-06 01:35:56 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-11-06 01:35:56 +0000
+
+    CSS
+
+diff --git a/H-CSS_TEST/style.css b/H-CSS_TEST/style.css
+new file mode 100644
+index 0000000..e56e44f
+--- /dev/null
++++ b/H-CSS_TEST/style.css
+@@ -0,0 +1,8 @@
++body {
++    background-color: chartreuse;
++    font-family: 'Courier New', Courier, monospace;
++}
++
++h1 {
++    color: blueviolet;
++}
+\ No newline at end of file
+diff --git a/H-CSS_TEST/test.html b/H-CSS_TEST/test.html
+new file mode 100644
+index 0000000..2798fea
+--- /dev/null
++++ b/H-CSS_TEST/test.html
+@@ -0,0 +1,27 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Types of CSS</title>
++
++<style>
++h1 {
++    color: darkblue;
++}
++</style>
++
++</head>
++<body>
++
++    <!-- 1. Inline CSS -->
++<h1 style="color: aliceblue;">Web Tech</h1>
++
++    <!-- 2. Internal CSS -->
++<h1>Web Tech</h1>
++    
++    <!-- 3. External CSS -->
++<!-- separate "".css file" -->
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/H-CSS_TEST/test2.html b/H-CSS_TEST/test2.html
+new file mode 100644
+index 0000000..c111fc8
+--- /dev/null
++++ b/H-CSS_TEST/test2.html
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html lang="en">
++    <link rel="stylesheet" href="style.css">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++    <h1>Web Tech</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/H-CSS_TEST/test3.html b/H-CSS_TEST/test3.html
+new file mode 100644
+index 0000000..5820c8b
+--- /dev/null
++++ b/H-CSS_TEST/test3.html
+@@ -0,0 +1,42 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++
++<style>
++
++#main {
++    color: purple;
++}
++
++.HELL {
++    text-align: center;
++}
++
++.kms {
++    color: darkcyan;
++    text-align: center;
++    font-family: 'Courier New', Courier, monospace;
++}
++
++</style>
++
++<!-- id = #<name> -->
++<!-- class = .<name> -->
++
++</head>
++<body>
++    <h1 id="main">Hello!</h1>
++    <p class="HELL">Welcome to HELL</p>
++    <p>miss q na sya</p>
++
++    <div class="kms">
++        <hr>
++        <h2>Hello! (again)</h2>
++        <p>kmskmskms</p>
++    </div>
++
++</body>
++</html>
+\ No newline at end of file
+
+commit b2c89ac7212555dff74cba04f98954f60857cd10
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-15 01:41:32 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-15 01:41:32 +0000
+
+    commit
+
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index 2860ad9..17d0a64 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -7,6 +7,20 @@
+     <title>Portfolio</title>
+ </head>
+ 
++<style>
++#Skills {
++    padding-left: 50px;
++}
++
++#Contact {
++    padding-left: 50px;
++}
++
++#Project {
++    padding-left: 50px;
++}
++</style>
++
+ <style>
+     aside {
+         padding-left: 15px;
+@@ -38,16 +52,14 @@
+ </style>
+ 
+ <header>
+-    <h1>Panelo, Prince Marky W.</h1>
++    <h1 style="color: rgb(73, 2, 73);">Panelo, Prince Marky W.</h1>
+     <p>- Welcome to my Portfolio! Nothing about me really stands out though.</p>
+ </header>
+ 
+-<body>
+-
+-    <hr>
+-    
++<body style="padding-left: 60px; padding-right: 60px;">
++<hr>
+     <br>
+-    <nav style="text-align: center;">
++    <nav style="text-align: center; font-size: 18px;">
+         <a href="">Home</a> |
+         <a href="">About</a> |
+         <a href="">Skills</a> |
+@@ -64,7 +76,8 @@
+             <strong>I am a second-year BSIT student majoring in Web Development, dedicated to building interactive, user-focused digital experiences.</strong>
+             
+             <br>
+-            <br>Alongside my web development coursework, I am continuously expanding my skillset by learning to code in various programming languages, editing videos, and diving into game development with a primary focus on Roblox Lua. 
++            <br>Alongside my web development coursework, I am continuously expanding my skillset by learning to code in various programming languages, 
++            <br>editing videos, and diving into game development with a primary focus on Roblox Lua. 
+             
+             <br>I love bringing creative concepts to life, whether through a functional web application, a dynamic video edit, or an immersive game environment. 
+             
+@@ -77,7 +90,7 @@
+     </div>
+     <hr>
+ 
+-    <div class="Skills">
++    <div id="Skills">
+         <h2>Skills</h2>
+         <ul>
+             <li>HTML</li>
+@@ -90,18 +103,37 @@
+     </div>
+ 
+     <hr>
+-    <div class="Project">
++    <div id="Project">
+         <h2>Projects</h2>
+         <aside>
+-        <h3 id="Project">
+-            <a href="https://shuwacuo.wixsite.com/portfolio" target="_blank">Personal Portfolio Website</a> &nbsp; | &nbsp; <a href="test.html">RouteShare Project</a> &nbsp; | &nbsp; <a href="https://stunning-invention-r7pp57xqw9xrhvg-3000.app.github.dev/HTML-LAB/">Our HTML-LAB Activity</a>
++        <h3 style="text-align: center;">
++            <a href="https://shuwacuo.wixsite.com/portfolio" target="_blank">Personal Portfolio Website</a> &nbsp; 
++            | &nbsp; <a href="test.html">RouteShare Project</a> &nbsp; 
++            | &nbsp; <a href="https://stunning-invention-r7pp57xqw9xrhvg-3000.app.github.dev/HTML-LAB/">Our HTML-LAB Activity</a>
+         </h3>
+-        </aside>
+-        
++        <h4>Personal Portfolio Website</h4>
++        <p>
++            - A personal website that showcases my background, technical skills, and projects as a web development student. <br>
++            It serves as a platform to present my experience, creativity, and progress in learning web development while providing visitors with information about me.
++        </p>
++
++        <h4>RouteShare Project</h4>
++        <p>
++            - A community-based navigation app that allows users to share road warnings, shortcuts, travel tips, and questions. <br>
++            It helps users discover useful routes, avoid traffic and road hazards, and learn from other travelers' experiences, particularly in Baguio City. <br>
++            Users can also search for routes, browse community posts, and share their own travel experiences. 
++        </p>
++
++        <h4>HTML-LAB Activity</h4>
++        <p>-
++            A collection of HTML laboratory activities designed to demonstrate my understanding of fundamental web development concepts. <br> It features a personal homepage with profile information, navigation links, and separate exercises covering text formatting, lists, hyperlinks <br>
++            images, schedules, registration forms, semantic HTML, and multimedia. This project helped me strengthen my HTML skills and gain hands-on experience in structuring and organizing web content.
++        </p>
++        </aside> 
+     </div>
+ 
+     <hr>
+-    <div class="Contact">
++    <div id="Contact">
+         <h3>Contact me:</h3>
+ 
+         <label for="Name">Your Name: </label>
+
+commit 920411d909681e684c8d59083a2c2dfae9b9850f
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-14 23:06:47 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-14 23:06:47 +0000
+
+    commit
+
+diff --git a/README.md b/README.md
+index 9b945a0..1062402 100644
+--- a/README.md
++++ b/README.md
+@@ -10,4 +10,4 @@ Hello, Prince Marky Panelo!
+ - git push
+ 
+ ### SPACE
+-- &nbsp;
+\ No newline at end of file
++- - "&amp;nbsp;"
+\ No newline at end of file
+
+commit cbbd1a669bbfdd842e299586984c64a1667a72b4
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-14 23:04:32 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-14 23:04:32 +0000
+
+    commit
+
+diff --git a/README.md b/README.md
+index 97b77ee..9b945a0 100644
+--- a/README.md
++++ b/README.md
+@@ -8,3 +8,6 @@ Hello, Prince Marky Panelo!
+ ### Rebase pull:
+ - git pull --rebase origin main
+ - git push
++
++### SPACE
++- &nbsp;
+\ No newline at end of file
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index 8bae92c..2860ad9 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -92,9 +92,11 @@
+     <hr>
+     <div class="Project">
+         <h2>Projects</h2>
++        <aside>
+         <h3 id="Project">
+-            <a href="https://shuwacuo.wixsite.com/portfolio">Personal Portfolio Website</a> | <a href="test.html">RouteShare Project</a> | <a href="https://stunning-invention-r7pp57xqw9xrhvg-3000.app.github.dev/HTML-LAB/">Our HTML-LAB Activity</a>
++            <a href="https://shuwacuo.wixsite.com/portfolio" target="_blank">Personal Portfolio Website</a> &nbsp; | &nbsp; <a href="test.html">RouteShare Project</a> &nbsp; | &nbsp; <a href="https://stunning-invention-r7pp57xqw9xrhvg-3000.app.github.dev/HTML-LAB/">Our HTML-LAB Activity</a>
+         </h3>
++        </aside>
+         
+     </div>
+ 
+
+commit be954d5e653784ad7afcd089ab880da9db072de2
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-14 22:59:10 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-14 22:59:10 +0000
+
+    commit
+
+diff --git a/emmet-laboratory/TP1A.png b/emmet-laboratory/TP1A.png
+new file mode 100644
+index 0000000..895569e
+Binary files /dev/null and b/emmet-laboratory/TP1A.png differ
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index ae2dac1..8bae92c 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -15,7 +15,25 @@
+ </style>
+ 
+ <style>
+-    #
++#Project {
++    text-decoration: none;
++}
++#Project a {
++    text-decoration: none;
++    color: rgb(99, 13, 123);
++}
++#Project a:hover {
++    color: rgb(218, 14, 218);
++}
++#Links a:link {
++    color: rgb(195, 109, 207);
++}
++#Links a:hover {
++    color: darkolivegreen;
++}
++#Links a:visited{
++    color: rgb(239, 150, 165)
++}
+ 
+ </style>
+ 
+@@ -41,7 +59,7 @@
+ 
+     <div class="About">
+         <aside>
+-        <p><strong>Biography</strong></p>
++        <h2>Biography</h2>
+         <p>
+             <strong>I am a second-year BSIT student majoring in Web Development, dedicated to building interactive, user-focused digital experiences.</strong>
+             
+@@ -60,21 +78,23 @@
+     <hr>
+ 
+     <div class="Skills">
+-        <h3>Skills</h3>
++        <h2>Skills</h2>
+         <ul>
+             <li>HTML</li>
+             <li>CSS</li>
+-            <li>JavaScript</li>
+             <li>Java</li>
+             <li>MySQL</li>
+             <li>Lua</li>
++            <li>C#</li>
+         </ul>
+     </div>
+ 
+     <hr>
+     <div class="Project">
+-        <h3>Projects</h3>
+-        <a href="">Personal Portfolio Website</a> | 
++        <h2>Projects</h2>
++        <h3 id="Project">
++            <a href="https://shuwacuo.wixsite.com/portfolio">Personal Portfolio Website</a> | <a href="test.html">RouteShare Project</a> | <a href="https://stunning-invention-r7pp57xqw9xrhvg-3000.app.github.dev/HTML-LAB/">Our HTML-LAB Activity</a>
++        </h3>
+         
+     </div>
+ 
+diff --git a/emmet-laboratory/test.html b/emmet-laboratory/test.html
+index f154623..034f461 100644
+--- a/emmet-laboratory/test.html
++++ b/emmet-laboratory/test.html
+@@ -1,27 +1,18 @@
+ <!DOCTYPE html>
+ <html lang="en">
+-    
+-<style>
+-  .vertical-divider {
+-    border-left: 1px solid #ccc;
+-    height: 25px;
+-    display: inline-block;
+-    margin: 0 10px;
+-  }
+-</style>
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Test</title>
+ </head>
+ <body>
+-    <span>Item 1</span>
+-    <span class="vertical-divider"></span>
+-    <span>Item 2</span>
+-    <span class="vertical-divider"></span> <br>
+-    <span class="vertical-divider"></span>
+-    <span class="vertical-divider"></span>
++  <h1 style="text-align: center;">Our Project Prototype Last Semester</h1>
++  <h3>RouteShare App</h3>
++  <p>RouteShare is a community-based navigation app where users can share road warnings, shortcuts, travel tips, and questions. It helps people discover useful routes, avoid traffic and road hazards, and share their travel experiences with others, especially in Baguio City.</p>
++    <div style="text-align: center;">
++    <img src="TP1A.png" alt="" width="900" height="540">
++    </div>  
+ </body>
+ </html>
+ 
+
+commit 9abf9a0ed34278c331545afb55cd9b562a3f805a
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-14 01:33:54 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-14 01:33:54 +0000
+
+    Commit
+
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+index 6ac181c..e88aabe 100644
+--- a/emmet-laboratory/01-basic.html
++++ b/emmet-laboratory/01-basic.html
+@@ -6,7 +6,7 @@
+     <title>01-basic</title>
+ </head>
+ <body>
+-   
++<!--  
+     <h1></h1>
+     <h2></h2>
+     <h2></h2>
+@@ -18,6 +18,6 @@
+     <nav></nav>
+     <main></main>
+     <footer></footer>
+-
++-->
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+index 1312905..058bb94 100644
+--- a/emmet-laboratory/02-classes-ids.html
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -5,6 +5,8 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>02-classes-ids</title>
+ </head>
++
++
+ <body>
+ 
+ <!-- Part 3 -->
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index 3f17db6..ae2dac1 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -7,6 +7,18 @@
+     <title>Portfolio</title>
+ </head>
+ 
++<style>
++    aside {
++        padding-left: 15px;
++        padding-right: 15px;
++    }
++</style>
++
++<style>
++    #
++
++</style>
++
+ <header>
+     <h1>Panelo, Prince Marky W.</h1>
+     <p>- Welcome to my Portfolio! Nothing about me really stands out though.</p>
+@@ -17,7 +29,7 @@
+     <hr>
+     
+     <br>
+-    <nav>
++    <nav style="text-align: center;">
+         <a href="">Home</a> |
+         <a href="">About</a> |
+         <a href="">Skills</a> |
+@@ -28,10 +40,22 @@
+     <hr>
+ 
+     <div class="About">
++        <aside>
+         <p><strong>Biography</strong></p>
+-        <p>I am a second-year BSIT student majoring in Web Development, dedicated to building interactive, user-focused digital experiences. Alongside my web development coursework, <br>I am continuously expanding my skillset by learning to code in various programming languages, editing videos, and diving into game development with a primary focus on Roblox Lua. <br>I love bringing creative concepts to life, whether through a functional web application, a dynamic video edit, or an immersive game environment. <br>I am eager to connect with fellow creators, collaborate on innovative projects, and build a versatile portfolio in the tech and gaming spaces.</p>
++        <p>
++            <strong>I am a second-year BSIT student majoring in Web Development, dedicated to building interactive, user-focused digital experiences.</strong>
++            
++            <br>
++            <br>Alongside my web development coursework, I am continuously expanding my skillset by learning to code in various programming languages, editing videos, and diving into game development with a primary focus on Roblox Lua. 
++            
++            <br>I love bringing creative concepts to life, whether through a functional web application, a dynamic video edit, or an immersive game environment. 
++            
++            <br>I am eager to connect with fellow creators, collaborate on innovative projects, and build a versatile portfolio in the tech and gaming spaces.
++        </p>
++
+         <p><strong>My Profile Photo: </strong></p>
+         <img src="Marky9207.jpeg" alt="My Profile Photo" width="240" length="320">
++        </aside>
+     </div>
+     <hr>
+ 
+@@ -50,7 +74,7 @@
+     <hr>
+     <div class="Project">
+         <h3>Projects</h3>
+-        <p>I aint got no projects bruh</p>
++        <a href="">Personal Portfolio Website</a> | 
+         
+     </div>
+ 
+@@ -68,7 +92,7 @@
+         <input type="email" name="Email" id="Email" placeholder="example@email.com">
+         <br><br>
+ 
+-        <label for="Subject">Inquiry on / Subject:</label>
++        <label for="Subject">Inquiry / Subject:</label>
+         <br>
+         <input type="text" name="Subject" id="Subject">
+         <br><br>
+@@ -85,7 +109,7 @@
+ </body>
+ <hr>
+ <footer>
+-    <h4>© 2026 - Panelo, Prince Marky W.</h4>
++    <h4 style="text-align: center;">© 2026 - Panelo, Prince Marky W.</h4>
+ </footer>
+ 
+ </html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/test.html b/emmet-laboratory/test.html
+new file mode 100644
+index 0000000..f154623
+--- /dev/null
++++ b/emmet-laboratory/test.html
+@@ -0,0 +1,29 @@
++<!DOCTYPE html>
++<html lang="en">
++    
++<style>
++  .vertical-divider {
++    border-left: 1px solid #ccc;
++    height: 25px;
++    display: inline-block;
++    margin: 0 10px;
++  }
++</style>
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++    <span>Item 1</span>
++    <span class="vertical-divider"></span>
++    <span>Item 2</span>
++    <span class="vertical-divider"></span> <br>
++    <span class="vertical-divider"></span>
++    <span class="vertical-divider"></span>
++</body>
++</html>
++
++
++
+
+commit cbb2277cd52a115a8c93e448044cd340edfc8cf2
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-12 01:54:52 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-12 01:54:52 +0000
+
+    readmefile
+
+diff --git a/README.md b/README.md
+index e44229a..97b77ee 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,10 @@
+-Hello, Prince Marky Panelo!
++Hello, Prince Marky Panelo!  
++  
++# Steps to save your code through the Terminal  
++- git add .
++- git commit -m "commit_msg"
++- git push
++
++### Rebase pull:
++- git pull --rebase origin main
++- git push
+diff --git a/emmet-laboratory/Marky9207.jpeg b/emmet-laboratory/Marky9207.jpeg
+new file mode 100644
+index 0000000..34e08c5
+Binary files /dev/null and b/emmet-laboratory/Marky9207.jpeg differ
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index 28ad7fb..3f17db6 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -30,7 +30,8 @@
+     <div class="About">
+         <p><strong>Biography</strong></p>
+         <p>I am a second-year BSIT student majoring in Web Development, dedicated to building interactive, user-focused digital experiences. Alongside my web development coursework, <br>I am continuously expanding my skillset by learning to code in various programming languages, editing videos, and diving into game development with a primary focus on Roblox Lua. <br>I love bringing creative concepts to life, whether through a functional web application, a dynamic video edit, or an immersive game environment. <br>I am eager to connect with fellow creators, collaborate on innovative projects, and build a versatile portfolio in the tech and gaming spaces.</p>
+-        <img src="" alt="">
++        <p><strong>My Profile Photo: </strong></p>
++        <img src="Marky9207.jpeg" alt="My Profile Photo" width="240" length="320">
+     </div>
+     <hr>
+ 
+@@ -50,6 +51,7 @@
+     <div class="Project">
+         <h3>Projects</h3>
+         <p>I aint got no projects bruh</p>
++        
+     </div>
+ 
+     <hr>
+
+commit d008a41a1fc69e90676104aabb421a4c92cb4177
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-12 01:41:44 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-12 01:41:44 +0000
+
+    test
+
+diff --git a/emmet-laboratory/emmetchallenge.html b/emmet-laboratory/emmetchallenge.html
+index 9ad7c00..06b32ba 100644
+--- a/emmet-laboratory/emmetchallenge.html
++++ b/emmet-laboratory/emmetchallenge.html
+@@ -45,6 +45,20 @@
+         </nav>
+     </header>
+ 
++    <div class="container">
++        <header>
++            <h1>My Portfolio</h1>
++            <p>Web Developer</p>
++            <nav>
++                <ul>
++                    <li><a href="">Menu 1</a></li>
++                    <li><a href="">Menu 2</a></li>
++                    <li><a href="">Menu 3</a></li>
++                    <li><a href="">Menu 4</a></li>
++                </ul>
++            </nav>
++        </header>
++    </div>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+
+commit dce2d552f35c92d45395547cc2c78fd87d78a55b
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-12 01:38:49 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-12 01:38:49 +0000
+
+    commit
+
+diff --git a/emmet-laboratory/emmetchallenge.html b/emmet-laboratory/emmetchallenge.html
+new file mode 100644
+index 0000000..9ad7c00
+--- /dev/null
++++ b/emmet-laboratory/emmetchallenge.html
+@@ -0,0 +1,50 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Test</title>
++</head>
++
++<!-- Part 13 -->
++<body>
++    <header>
++        <h1>My Portfolio</h1>
++        <nav>
++            <ul>
++                <li><a href=""></a></li>
++                <li><a href=""></a></li>
++                <li><a href=""></a></li>
++                <li><a href=""></a></li>
++                <li><a href=""></a></li>
++            </ul>
++        </nav>
++    </header>
++
++    <hr>
++    <div class="test">Test Stuff</div>
++
++    <p class="container"></p> <!-- p.container -->
++    <div class="container"></div> <!-- div.container -->
++    <div id="container"></div>  <!-- div#container -->
++
++    <header class="site-header"></header>
++    <nav id="main-nav"></nav>
++    <main class="content"></main>
++    <section id="about"></section>
++    <footer class="site-footer"></footer>
++
++    <header class="TEST">
++        <h1>Your Mama</h1>
++        <nav>
++            <ul>
++                <li class="yourmama1"></li>
++                <li class="yourmama2"></li>
++                <li class="yourmama3"></li>
++            </ul>
++        </nav>
++    </header>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index 27819b9..28ad7fb 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -9,7 +9,7 @@
+ 
+ <header>
+     <h1>Panelo, Prince Marky W.</h1>
+-    <p>- i js focked yo mama last night :joy:</p>
++    <p>- Welcome to my Portfolio! Nothing about me really stands out though.</p>
+ </header>
+ 
+ <body>
+@@ -28,10 +28,11 @@
+     <hr>
+ 
+     <div class="About">
+-        <p>Biography</p>
++        <p><strong>Biography</strong></p>
++        <p>I am a second-year BSIT student majoring in Web Development, dedicated to building interactive, user-focused digital experiences. Alongside my web development coursework, <br>I am continuously expanding my skillset by learning to code in various programming languages, editing videos, and diving into game development with a primary focus on Roblox Lua. <br>I love bringing creative concepts to life, whether through a functional web application, a dynamic video edit, or an immersive game environment. <br>I am eager to connect with fellow creators, collaborate on innovative projects, and build a versatile portfolio in the tech and gaming spaces.</p>
+         <img src="" alt="">
+     </div>
+-    <br><hr>
++    <hr>
+ 
+     <div class="Skills">
+         <h3>Skills</h3>
+@@ -39,26 +40,50 @@
+             <li>HTML</li>
+             <li>CSS</li>
+             <li>JavaScript</li>
+-            <li>PHP</li>
++            <li>Java</li>
+             <li>MySQL</li>
+-            <li>Git</li>
++            <li>Lua</li>
+         </ul>
+     </div>
+ 
+     <hr>
+     <div class="Project">
+         <h3>Projects</h3>
++        <p>I aint got no projects bruh</p>
+     </div>
+ 
+     <hr>
+     <div class="Contact">
+-        <h3>Contact</h3>
++        <h3>Contact me:</h3>
++
++        <label for="Name">Your Name: </label>
++        <br>
++        <input type="text" name="Name" id="Name">
++        <br><br>
++
++        <label for="Email">Your Email:</label>
++        <br>
++        <input type="email" name="Email" id="Email" placeholder="example@email.com">
++        <br><br>
++
++        <label for="Subject">Inquiry on / Subject:</label>
++        <br>
++        <input type="text" name="Subject" id="Subject">
++        <br><br>
++
++        <label for="Message">Inquiry Details:</label>
++        <br>
++        <textarea name="Message" id="Message"></textarea>
++
++        <br><br>
++        <input type="button" value="Submit" onclick="alert('Mark, are you sure?')">
++
+     </div>
+ 
+ </body>
+ <hr>
+ <footer>
+-    <h4>© 2026 - Your Name</h4>
++    <h4>© 2026 - Panelo, Prince Marky W.</h4>
+ </footer>
+ 
+ </html>
+\ No newline at end of file
+
+commit 19a093eb0e9fa54c28f6a527841588f0506fec7a
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-09 01:56:41 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-09 01:56:41 +0000
+
+    commit
+
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index 47fc861..27819b9 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -45,7 +45,15 @@
+         </ul>
+     </div>
+ 
++    <hr>
++    <div class="Project">
++        <h3>Projects</h3>
++    </div>
+ 
++    <hr>
++    <div class="Contact">
++        <h3>Contact</h3>
++    </div>
+ 
+ </body>
+ <hr>
+
+commit a07ba3b9b48ed7ac6a8c52eea7dd48f02a35d2b5
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-09 01:53:31 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-09 01:53:31 +0000
+
+    commit
+
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+index 4bcecb8..ed85a24 100644
+--- a/emmet-laboratory/04-form.html
++++ b/emmet-laboratory/04-form.html
+@@ -78,7 +78,7 @@
+     placeholder="Your Current Address"></textarea>
+ 
+     <br><br>
+-    <button type="submit">Submit</button>
++    <input type="button" onclick="alert('Yo Mama')" value="Submit">
+ 
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/05-semantic.html b/emmet-laboratory/05-semantic.html
+new file mode 100644
+index 0000000..a7e2544
+--- /dev/null
++++ b/emmet-laboratory/05-semantic.html
+@@ -0,0 +1,59 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>05-semantic</title>
++</head>
++<body>
++
++<!-- Part 10 -->
++    <header>
++        <h1>Your Mama</h1>
++    </header>
++    <hr>
++
++<!-- nav>ul>li*4>a -->    
++    <nav>
++        <ul>
++            <li><a href="https://www.youtube.com/" target="_blank">Link to Youtube</a></li>
++            <li><a href="https://www.google.com/">Link to Google</a></li>
++            <li><a href="https://www.facebook.com/">Link to Facebook</a></li>
++            <li><a href="https://www.twitter.com/">Link to Twitter</a></li>
++        </ul>
++    </nav>
++
++    <hr>
++    <main>
++        <section>
++            <article>Yo mama so fat</article>
++        </section>
++    </main>
++
++    <hr>
++    <footer>
++        <p>Yo mama's foot :flushed:</p>
++    </footer>
++
++<!-- Part 11 -->
++<!-- div.container>header>h1{My Portfolio}+p{Web Developer}+nav>ul>li*4>a{Menu $} -->
++
++<div class="container">
++    <header>
++        <h1>My Portfolio</h1>
++        <p>Web Developer</p>
++        <nav>
++            <ul>
++                <li><a href="">Menu 1</a></li>
++                <li><a href="">Menu 2</a></li>
++                <li><a href="">Menu 3</a></li>
++                <li><a href="">Menu 4</a></li>
++            </ul>
++        </nav>
++    </header>
++</div>
++
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+new file mode 100644
+index 0000000..47fc861
+--- /dev/null
++++ b/emmet-laboratory/portfolio.html
+@@ -0,0 +1,56 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Portfolio</title>
++</head>
++
++<header>
++    <h1>Panelo, Prince Marky W.</h1>
++    <p>- i js focked yo mama last night :joy:</p>
++</header>
++
++<body>
++
++    <hr>
++    
++    <br>
++    <nav>
++        <a href="">Home</a> |
++        <a href="">About</a> |
++        <a href="">Skills</a> |
++        <a href="">Projects</a> |
++        <a href="">Contact</a> 
++    <br><br>
++    </nav>
++    <hr>
++
++    <div class="About">
++        <p>Biography</p>
++        <img src="" alt="">
++    </div>
++    <br><hr>
++
++    <div class="Skills">
++        <h3>Skills</h3>
++        <ul>
++            <li>HTML</li>
++            <li>CSS</li>
++            <li>JavaScript</li>
++            <li>PHP</li>
++            <li>MySQL</li>
++            <li>Git</li>
++        </ul>
++    </div>
++
++
++
++</body>
++<hr>
++<footer>
++    <h4>© 2026 - Your Name</h4>
++</footer>
++
++</html>
+\ No newline at end of file
+
+commit 4acd83af3b8e90fc65c36025b9808d7940185173
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-07 01:54:58 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-07 01:54:58 +0000
+
+    commit
+
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+index 84d16e8..4bcecb8 100644
+--- a/emmet-laboratory/04-form.html
++++ b/emmet-laboratory/04-form.html
+@@ -69,7 +69,7 @@
+     <label for="hobbies">Hobbies:</label>
+     <br>
+     <textarea name="hobbies" id="hobbies" required
+-    placeholder="any hobby/s"></textarea>
++    placeholder="Any Hobby/s"></textarea>
+     <br><br>
+ 
+     <label for="address">Address:</label>
+
+commit f5d136ce2320818da7ea2f58551988ba1f3589be
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-07 01:53:53 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-07 01:53:53 +0000
+
+    commit
+
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index a675b16..5d06e35 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -64,8 +64,8 @@
+             <option value="">Select Program</option>
+             <option value="BSIT">BSIT</option>
+             <option value="BSCS">BSCS</option>
+-            <option value="BSIS">BSIS</option>
+-            <option value="BSE">BSE</option>
++            <option value="BSIS">BSDA</option>
++            <option value="BSE">BMMA</option>
+         </select>
+         <br><br>
+ 
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+new file mode 100644
+index 0000000..84d16e8
+--- /dev/null
++++ b/emmet-laboratory/04-form.html
+@@ -0,0 +1,84 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>04-form</title>
++</head>
++<body>
++    <input type="text" name="" id=""> 
++    <input type="email" name="" id="">
++    <input type="password" name="" id="">
++    <input type="checkbox" name="" id="">
++    <input type="radio" name="" id="">
++    <input type="submit" value="">
++    <hr>
++
++    <label for="studentid">Student ID:</label>
++    <br>
++    <input type="text" name="studentid" id="studentid"
++            placeholder="##-####-###" required>
++    <br><br>
++
++    <label for="fullname">Full Name:</label>
++    <br>
++    <input type="text" name="fullname" id="fullname"
++            placeholder="Last Name, First Name M.I." required>
++    <br><br>
++    
++    <label for="email">Email:</label>
++    <br>
++    <input type="email" name="email" id="email"
++            placeholder="yourmom@email.com" required>
++    <br><br>
++
++    <label for="password">Password:</label>
++    <br>
++    <input type="password" name="password" id="password"
++            placeholder="Enter your password: "
++            minlength="8" maxlength="20" required>
++    <br><br>
++
++    <label for="gender">Gender:</label>
++    <br>
++    <input type="radio" name="gender" id="male" value="Male" required>
++    <label for="male">Male</label>
++
++    <input type="radio" name="gender" id="female" value="Female" required>
++    <label for="female">Female</label>
++
++    <input type="radio" name="gender" id="other" value="Other" required>
++    <label for="other">Other</label>
++    <br><br>
++
++    <label for="course">Course:</label>
++    <br>
++    <input type="radio" name="course" id="BSCS" value="BSCS" required>
++    <label for="BSIT">BSCS</label>
++    <br>
++    <input type="radio" name="course" id="BSIT" value="BSIT" required>
++    <label for="BSIT">BSIT</label>
++    <br>
++    <input type="radio" name="course" id="BSDA" value="BSDA" required>
++    <label for="BSDA">BSDA</label>
++    <br>
++    <input type="radio" name="course" id="BMMA" value="BMMA" required>
++    <label for="BMMA">BMMA</label>
++    <br><br>
++
++    <label for="hobbies">Hobbies:</label>
++    <br>
++    <textarea name="hobbies" id="hobbies" required
++    placeholder="any hobby/s"></textarea>
++    <br><br>
++
++    <label for="address">Address:</label>
++    <br>
++    <textarea name="address" id="address" required
++    placeholder="Your Current Address"></textarea>
++
++    <br><br>
++    <button type="submit">Submit</button>
++
++</body>
++</html>
+\ No newline at end of file
+
+commit 77f3ff91b3006ab25887eca66d67dfe23c8ef43d
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-05 01:48:12 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-05 01:48:12 +0000
+
+    commit 5-10
+
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+index 213ed8a..1312905 100644
+--- a/emmet-laboratory/02-classes-ids.html
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -6,6 +6,8 @@
+     <title>02-classes-ids</title>
+ </head>
+ <body>
++
++<!-- Part 3 -->
+     <p class="introduction"></p>  <!-- p.introduction -->
+     
+     <div id="container"></div>  <!-- div#container -->
+@@ -23,6 +25,7 @@
+         <footer class="site-footer"></footer>
+     </main>
+ 
++<!-- Part 4 -->
+ <!-- A. -->    
+     <ul>
+         <li></li>
+@@ -46,7 +49,40 @@
+ 
+ <!-- B. -->
+ 
++    <h1></h1>
++    <p></p>
++
++    <h1></h1>
++    <h2></h2>
++    <p></p>
++    <p></p>
++
++<!-- C. -->
++
++    <li></li>   
++    <li></li>   
++    <li></li>   
++    <li></li>   
++    <li></li>   
+ 
++<!-- Task -->
++    <div></div>
++    <div></div>
++    <div></div>
++
++    <p></p>
++    <p></p>
++    <p></p>
++    <p></p>
++    <p></p>
++
++<!-- Part 5 -->
++    <h1>Web Technologies</h1>
++    <p>Welcome to my webpage.</p>
++
++    <!-- Task -->
++    <h1>My Web Development Journey</h1>
++    <p>I am learning HTML, CSS, Javascript, and Web Developement</p>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+new file mode 100644
+index 0000000..0bf4c7b
+--- /dev/null
++++ b/emmet-laboratory/03-navigation.html
+@@ -0,0 +1,64 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>03-navigation</title>
++</head>
++<body>
++<!-- Part 6 -->
++    <ul>
++        <li class="item1"></li>  <!-- ul>li.item$*5 -->
++        <li class="item2"></li>
++        <li class="item3"></li>
++        <li class="item4"></li>
++        <li class="item5"></li>
++    </ul>
++
++    <ul>
++        <li>Menu 1</li>  <!-- ul>li{Menu $}*5 -->
++        <li>Menu 2</li>
++        <li>Menu 3</li>
++        <li>Menu 4</li>
++        <li>Menu 5</li>
++    </ul>
++
++<!-- Task -->
++
++    <nav>
++        <ol>
++            <li><a href="index.html"></a>Home</li>
++            <li>About</li>
++            <li>Services</li>
++            <li>Projects</li>
++            <li>Contact</li>
++        </ol>
++    </nav>
++
++<!-- Part 7 -->
++
++<!-- nav>ul>li*5>a -->
++<nav>
++    <ul>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++    </ul>
++</nav>
++
++<!-- Challenge -->
++
++<nav>
++    <ul>
++        <li><a href=""></a>Home</li>
++        <li><a href=""></a>About</li>
++        <li><a href=""></a>Portfolio</li>
++        <li><a href=""></a>Services</li>
++        <li><a href=""></a>Contact</li>
++    </ul>
++</nav>
++
++</body>
++</html>
+\ No newline at end of file
+
+commit dd09e803874a73cfd7ecad4a2dc8fc8b3d9f5ff2
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-10-05 01:20:40 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-10-05 01:20:40 +0000
+
+    05 commit
+
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+new file mode 100644
+index 0000000..6ac181c
+--- /dev/null
++++ b/emmet-laboratory/01-basic.html
+@@ -0,0 +1,23 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>01-basic</title>
++</head>
++<body>
++   
++    <h1></h1>
++    <h2></h2>
++    <h2></h2>
++    <p></p>
++    <p></p>
++    <p></p>
++    <div></div>
++    <header></header>
++    <nav></nav>
++    <main></main>
++    <footer></footer>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+new file mode 100644
+index 0000000..213ed8a
+--- /dev/null
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -0,0 +1,52 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>02-classes-ids</title>
++</head>
++<body>
++    <p class="introduction"></p>  <!-- p.introduction -->
++    
++    <div id="container"></div>  <!-- div#container -->
++
++    <div class="card featured"></div>
++
++    <section id="about" class="content-section"></section>
++
++    <!-- Task -->
++    <main>
++        <header class="site-header"></header>
++        <nav id="main-nav"></nav>
++        <main class="content"></main>
++        <section id="about"></section>
++        <footer class="site-footer"></footer>
++    </main>
++
++<!-- A. -->    
++    <ul>
++        <li></li>
++    </ul>
++
++    <nav>
++        <ul>
++            <li></li>
++        </ul>
++    </nav>
++
++    <nav>
++        <ul>
++            <li></li>
++            <li></li>
++            <li></li>
++            <li></li>
++            <li></li>
++        </ul>
++    </nav>
++
++<!-- B. -->
++
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+new file mode 100644
+index 0000000..8bcab0a
+--- /dev/null
++++ b/emmet-laboratory/index.html
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>emmet-index</title>
++</head>
++<body>
++    
++</body>
++</html>
+
+commit 34ce885743e3cb4d87674fe8da2d26c43c08be46
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-30 01:21:09 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-30 01:21:09 +0000
+
+    commit
+
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index af796d4..5f13578 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -5,6 +5,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Index</title>
+ </head>
++
+ <style>
+ #Navigation {
+     text-align: center;
+@@ -19,8 +20,13 @@
+     background-color: transparent;
+     text-decoration: none;
+ }
++body {
++    margin-left: 90px;
++    margin-right: 90px;
++}
+ 
+ </style>
++
+ <body>
+     <h1 id="Navigation">
+         <a style="color: rgb(228, 177, 206);" href="index.html">Home</a>
+
+commit 780fb26eced00caaaa0973fba9db0a0d0c70fd04
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-30 01:17:00 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-30 01:17:00 +0000
+
+    30/09/26
+
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+index 648d90c..9466c27 100644
+--- a/HTML-LAB/images.html
++++ b/HTML-LAB/images.html
+@@ -20,9 +20,6 @@
+         Currently a Second-Year BSIT Student majoring in Web Development Track. <br>
+         I like gaming and I’m currently learning different coding languages such as <br>
+         HTML, CSS, C#, and JavaScript.
+-
+-
+     </p>
+-         
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index d50f8b8..af796d4 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -46,7 +46,7 @@
+     <hr>
+ 
+     <h2>Additional Navigational Links</h2>
+-    <h1 id="Navigation">
++    <h2 id="Navigation">
+         <a href="formatting.html">Formatting</a>
+         | <a href="lists.html">Lists</a>
+         | <a href="links.html">Links</a>
+@@ -56,7 +56,7 @@
+         | <a href="semantic.html">Semantic</a>
+         | <a href="multimedia.html">Multimedia</a>
+ 
+-    </h1>
++    </h2>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index dddbeca..f3a0c16 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -9,7 +9,15 @@
+ table, th, td {
+   border:1px solid black;
+ }
++body {
++    margin-right: 90px;
++    margin-left: 90px;
++}
+ </style>
++<header>
++    <h1 style="text-align: center;">My Schedule | First Semester | 2nd Year</h1>
++    <hr>
++</header>
+ <body>
+ <table border="1" style="width: 100%;">
+     <tr>
+@@ -191,9 +199,13 @@ table, th, td {
+         <td>12:50 PM - 2:10 PM</td>
+         <td>SOCSCI101N</td>
+         <td>G205</td>
+-        <td>Ma. Florida Dela Cruz</td>
+-    </tr>
+-    <tr>
++        <st>
++            <td>Ma. Florida Dela Cruz</td>
++        </st>
++    <st></tr></st>
++    <st>
++        <tr>
++    </st>
+         <td>6:10 PM - 7:30 PM</td>
+         <td>SCIENCE100</td>
+         <td>G203</td>
+diff --git a/HTML-LAB/skills.html b/HTML-LAB/skills.html
+index d43ff02..c51df0f 100644
+--- a/HTML-LAB/skills.html
++++ b/HTML-LAB/skills.html
+@@ -6,6 +6,12 @@
+     <title>Skills</title>
+ </head>
+ <body>
+-    
++    <table>
++        <tr>
++            <th></th>
++            <th></th>
++            <th></th>
++        </tr>
++    </table>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 7cffdb9b1589f5aec0fde1dfb674d8a174997499
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-28 01:55:17 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-28 01:55:17 +0000
+
+    commit 28/09/26
+
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index cba0b4c..d50f8b8 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -30,7 +30,7 @@
+     </h1>
+     <hr>
+ 
+-    <h2 style="text-align: center;">Welcome!</h1> 
++    <h2 style="text-align: center;">Welcome! This is my Home page.</h1> 
+     <hr>
+     <img src="https://raw.githubusercontent.com/PaneloMarky/Webtech/main/Marky9207.jpeg"
+             alt="Marky's Profile Photo" 
+@@ -45,7 +45,7 @@
+     </p>
+     <hr>
+ 
+-
++    <h2>Additional Navigational Links</h2>
+     <h1 id="Navigation">
+         <a href="formatting.html">Formatting</a>
+         | <a href="lists.html">Lists</a>
+
+commit 1d9504b95a4b18632e4a6ae9799a43bd2fa50af9
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-28 01:52:51 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-28 01:52:51 +0000
+
+    Commit Lab 9:52
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+index a77b97e..eac85b2 100644
+--- a/HTML-LAB/about.html
++++ b/HTML-LAB/about.html
+@@ -15,58 +15,85 @@
+ #Navigation a:hover{
+     color: magenta;
+ }
++#Navigation a:link{
++    background-color: transparent;
++    text-decoration: none;
++}
+ 
+ </style>
+ <body>
+     <h1 id="Navigation">
+         <a href="index.html">Home</a>
+-        | <a href="about.html">About</a>
++        | <a style="color: rgb(228, 177, 206);" href="about.html">About</a>
+         | <a href="skills.html">Skills</a>
+         | <a href="contact.html">Contact</a>
+     </h1>
+     <hr>
+     <main>
+-        <h1>About Me</h1>
+-        <h2>Prince Marky W. Panelo</h2>
+-        <p>
+-            Currently a <strong>BSIT</strong> Student at the <strong>University of the Cordileras.</strong> <br>
+-            I'm currently studying HTML and a bunch of coding languages that could help me
+-            for my future. Personally invested in gaming and waste majority of my time in games.
+-        </p>
+-        <hr>
+-            <h1>Educational Background</h1>
+-            <ul>
+-                <li><strong>University of the Cordilleras</strong></li>
+-                    <ul>
+-                        <li>Current 2nd Year BS Information Technology Student</li>
+-                        <li>2025 - Present</li>
+-                    </ul>
+-                    <br>
+-                <li><strong>Don Ramon E. Costales Memorial National High School</strong></li>
+-                    <ul>
+-                        <li>Senior High School</li>
+-                            <ul>
+-                                <li>S.T.E.M Strand</li>
+-                                <li>With Honors</li>
+-                                <li>2023 - 2025</li>
+-                            </ul>
+-                        <li>Junior High School</li>
+-                            <ul>
+-                                <li>Basic Education Curriculum</li>
+-                                <li>With Honors</li>
+-                                <li>2019 - 2023</li>
+-                            </ul>
+-                    </ul>
+-                    <br>
+-                <li><strong>King's Kid Christian School INC.</strong></li>
+-                    <ul>
+-                        <li>Basic Education Curriculum</li>
+-                        <li>2013 - 2019</li>
+-                    </ul>
+-            </ul>
+-        <hr>
+-        <h1>Career Goals</h1>
+-            <h3>I dont know brah</h3>
++
++    <h1>About Me</h1>
++    <h2>Prince Marky W. Panelo</h2>
++    <p>
++        Currently a <strong>BSIT</strong> Student at the <strong>University of the Cordileras.</strong> <br>
++        I'm currently studying HTML and a bunch of coding languages that could help me
++        for my future. Personally invested in gaming and waste majority of my time in games.
++    </p>
++    <hr>
++
++    <h1>Educational Background</h1>
++        <ul>
++            <li><strong>University of the Cordilleras</strong></li>
++                <ul>
++                    <li>Current 2nd Year BS Information Technology Student</li>
++                    <li>2025 - Present</li>
++                </ul>
++                <br>
++            <li><strong>Don Ramon E. Costales Memorial National High School</strong></li>
++                <ul>
++                    <li>Senior High School</li>
++                        <ul>
++                            <li>S.T.E.M Strand</li>
++                            <li>With Honors</li>
++                            <li>2023 - 2025</li>
++                        </ul>
++                    <li>Junior High School</li>
++                        <ul>
++                            <li>Basic Education Curriculum</li>
++                            <li>With Honors</li>
++                            <li>2019 - 2023</li>
++                        </ul>
++                </ul>
++                <br>
++            <li><strong>King's Kid Christian School INC.</strong></li>
++                <ul>
++                    <li>Basic Education Curriculum</li>
++                    <li>2013 - 2019</li>
++                </ul>
++        </ul>
++    <hr> 
++
++    <h1>Career Goals</h1>
++    <ul>
++        <li>In the long run, hoping to get a <strong>Financially Stable Job</strong></li>
++        <li>Or find a rewarding career</li>
++    </ul>
++    
++    <hr>
++        
++    <h1>Hobbies</h1>
++        <ul>
++            <li>Gaming</li>
++            <li>Photography</li>
++            <li>Lil bit of Programming</li>
++        </ul>
++    <hr>
++
++    <h1>Interests</h1>
++    <p><strong>Hatsune Miku</strong> has caught my attention again lately.</p>
++    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg8Pc5RE96DUKwBUfoJ2L5i7wmzbQ5574V0pods-mSQ&s=10" alt="Hatsune Miku"
++    width="300"
++    height="470">
++    <p>idc if u think im cringe or not</p>
+ 
+     </main>
+ </body>
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index 92175ed..cba0b4c 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -6,35 +6,47 @@
+     <title>Index</title>
+ </head>
+ <style>
+-#Yaffilda {
++#Navigation {
+     text-align: center;
+-    text-decoration: none;
+ }
+-#Yaffilda a {
+-    color: darkmagenta;
++#Navigation a{
++    color: darkorchid;
++}
++#Navigation a:hover{
++    color: magenta;
+ }
+-#Yaffilda a:hover{
+-    color: rgb(236, 67, 236);
++#Navigation a:link{
++    background-color: transparent;
++    text-decoration: none;
+ }
+ 
+ </style>
+ <body>
+-
+-    <hr>
+-    <h1>My Personal Page</h1>
+-    <hr>
+-    <h2>Prince Marky Panelo</h2>
+-    <p>Bachelor of Science in Information Technology</p>
+-    <p>CITCS 2I-B - Web Track</p>
++    <h1 id="Navigation">
++        <a style="color: rgb(228, 177, 206);" href="index.html">Home</a>
++        | <a href="about.html">About</a>
++        | <a href="skills.html">Skills</a>
++        | <a href="contact.html">Contact</a>
++    </h1>
+     <hr>
+-    <h3>About Me</h3>
+-    <p>I am a <strong>Web student!</strong> I am a Web student, Sir!!</p>    
++
++    <h2 style="text-align: center;">Welcome!</h1> 
+     <hr>
+-    <h3>My Hobbies</h3>
+-    <p>I waste my time playing games and larping photography.</p>
++    <img src="https://raw.githubusercontent.com/PaneloMarky/Webtech/main/Marky9207.jpeg"
++            alt="Marky's Profile Photo" 
++            width="290" 
++            height="300">
++    <h1>Panelo, Prince Marky W.</h1>
++    <h3>BS in Information Technology</h3>
++    <p>
++        Currently a Second-Year BSIT Student majoring in the <strong>Web Development Track.</strong> <br>
++        I like gaming and I’m currently learning different coding languages such as <br>
++        HTML, CSS, C#, and JavaScript.
++    </p>
+     <hr>
+ 
+-    <h1 id="Yaffilda">
++
++    <h1 id="Navigation">
+         <a href="formatting.html">Formatting</a>
+         | <a href="lists.html">Lists</a>
+         | <a href="links.html">Links</a>
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+index 37296c5..3d0dc6d 100644
+--- a/HTML-LAB/semantic.html
++++ b/HTML-LAB/semantic.html
+@@ -46,6 +46,7 @@
+                     of the modern world. Having robust web development skills allows you to
+                     move beyond being a passive consumer of digital content to an active
+                     creator and shaper of the online experience.
++                    <br>
+                 </p>
+ 
+                 <ul>
+@@ -70,7 +71,7 @@
+             </article>
+ 
+             <aside>
+-                <h4>Career Opportunities and Flexibility</h4>
++                <h4><br>Career Opportunities and Flexibility</h4>
+ 
+                 <p>
+                     From a professional standpoint, web development remains an important
+@@ -78,7 +79,7 @@
+                     developers continues as companies improve their digital services.
+                     Web development also offers opportunities for remote work, freelancing,
+                     startup creation, and global collaboration.
+-                </p>
++                </p><br>
+             </aside>
+         </section>
+ 
+
+commit 4495c7228f7c150f6fec93329366b1d46e24663e
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-28 00:28:21 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-28 00:28:21 +0000
+
+    8:30
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+index e69de29..a77b97e 100644
+--- a/HTML-LAB/about.html
++++ b/HTML-LAB/about.html
+@@ -0,0 +1,73 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>About</title>
++</head>
++<style>
++#Navigation {
++    text-align: center;
++}
++#Navigation a{
++    color: darkorchid;
++}
++#Navigation a:hover{
++    color: magenta;
++}
++
++</style>
++<body>
++    <h1 id="Navigation">
++        <a href="index.html">Home</a>
++        | <a href="about.html">About</a>
++        | <a href="skills.html">Skills</a>
++        | <a href="contact.html">Contact</a>
++    </h1>
++    <hr>
++    <main>
++        <h1>About Me</h1>
++        <h2>Prince Marky W. Panelo</h2>
++        <p>
++            Currently a <strong>BSIT</strong> Student at the <strong>University of the Cordileras.</strong> <br>
++            I'm currently studying HTML and a bunch of coding languages that could help me
++            for my future. Personally invested in gaming and waste majority of my time in games.
++        </p>
++        <hr>
++            <h1>Educational Background</h1>
++            <ul>
++                <li><strong>University of the Cordilleras</strong></li>
++                    <ul>
++                        <li>Current 2nd Year BS Information Technology Student</li>
++                        <li>2025 - Present</li>
++                    </ul>
++                    <br>
++                <li><strong>Don Ramon E. Costales Memorial National High School</strong></li>
++                    <ul>
++                        <li>Senior High School</li>
++                            <ul>
++                                <li>S.T.E.M Strand</li>
++                                <li>With Honors</li>
++                                <li>2023 - 2025</li>
++                            </ul>
++                        <li>Junior High School</li>
++                            <ul>
++                                <li>Basic Education Curriculum</li>
++                                <li>With Honors</li>
++                                <li>2019 - 2023</li>
++                            </ul>
++                    </ul>
++                    <br>
++                <li><strong>King's Kid Christian School INC.</strong></li>
++                    <ul>
++                        <li>Basic Education Curriculum</li>
++                        <li>2013 - 2019</li>
++                    </ul>
++            </ul>
++        <hr>
++        <h1>Career Goals</h1>
++            <h3>I dont know brah</h3>
++
++    </main>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/skills.html b/HTML-LAB/skills.html
+new file mode 100644
+index 0000000..d43ff02
+--- /dev/null
++++ b/HTML-LAB/skills.html
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Skills</title>
++</head>
++<body>
++    
++</body>
++</html>
+\ No newline at end of file
+
+commit 2748b50a034366cc8627afe14bab11b4c4df6598
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-27 05:38:29 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-27 05:38:29 +0000
+
+    sunday.
+
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index 2bb266b..92175ed 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -42,6 +42,7 @@
+         | <a href="schedule.html">Schedule</a>
+         | <a href="registration.html">Registration</a>
+         | <a href="semantic.html">Semantic</a>
++        | <a href="multimedia.html">Multimedia</a>
+ 
+     </h1>
+ 
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+index 6842668..37296c5 100644
+--- a/HTML-LAB/semantic.html
++++ b/HTML-LAB/semantic.html
+@@ -2,59 +2,95 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <meta name="viewport" content="width=
+-    , initial-scale=1.0">
+-    <title>Document</title>
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Semantic</title>
++
++    <style>
++        aside {
++            width: 45%;
++            padding-left: 15px;
++            padding-right: 15px;
++            text-align: justify;
++            background-color: rgba(220, 220, 220, 0.646);
++        }
++    </style>
+ </head>
++
+ <body>
+-<style>
+-aside {
+-    width: 45%;
+-    padding-left: 15px;
+-    padding-right: 15px;
+-    text-align: justify;
+-    background-color: rgba(220, 220, 220, 0.646);
+-}
+-
+-
+-</style>
+-    <article>
+-        <header>
+-            <h1>The Importance of Web Development Skills</h1>
+-            <p>
+-                In an era where a digital presence dictates the success of nearly every business, organization, and personal brand, web development has transitioned from a niche technical specialty into a fundamental literacy. Whether you are an entrepreneur, a marketing professional, or someone looking to pivot into a high-demand tech career, understanding how the web works—and how to build for it—unlocks unprecedented opportunities.</p>
+-            <hr>
+-        </header>
+-    </article>
++
++    <header>
++        <h1>The Importance of Web Development Skills</h1>
++        <p>
++            In an era where a digital presence dictates the success of nearly every business,
++            organization, and personal brand, web development has transitioned from a niche
++            technical specialty into a fundamental literacy.
++        </p>
++        <hr>
++    </header>
++
+     <nav>
+         <a href="index.html">Home</a> |
+         <a href="about.html">About</a> |
+-        <a href="contact.html">Contact</a>   
++        <a href="contact.html">Contact</a>
+         <hr>
+     </nav>
+-    <article style="padding-left: 15px;">
+-        <h2>Why Web Development Matters</h2>
+-        <p id="Article_2">
+-            The internet is the primary storefront, classroom, and community center of the modern world. Having robust web development skills allows you to move beyond being a passive consumer of digital content to an active creator and shaper of the online experience.
+-        </p>
+-        <ul>
+-            <li><strong>Empowerment and Autonomy: </strong>Building your own landing pages, blogs, or full-scale web applications means you no longer rely entirely on third-party platforms or expensive developers to bring an idea to life.</li>
+-            <li><strong>Enhanced Problem-Solving:</strong> Learning to code teaches computational thinking—breaking large, complex challenges down into logical, manageable steps.</li>
+-            <li><strong>Cross-Disciplinary Value:</strong> Professionals in marketing, design, and product management who understand HTML, CSS, or JavaScript can communicate more effectively with engineering teams and execute projects faster.</li>
+-        </ul>
+-    </article>
+-
+-    <aside>
+-        <h4 style="text-align: center;">Career Opportunities and Flexibility</h4>
+-        <p> 
+-            From a professional standpoint, web development remains one of the most resilient and lucrative career paths. The demand for skilled front-end, back-end, and full-stack developers continues to surge as companies race to optimize their digital infrastructure for mobile and desktop users alike. Furthermore, web development offers unmatched career flexibility. It is an industry well-suited for remote work, freelancing, startup creation, and global collaboration, giving you the freedom to work from almost anywhere.
+-        </p>
+-    </aside>
+-    
++
++    <main>
++
++        <section>
++            <article>
++                <h2>Why Web Development Matters</h2>
++
++                <p>
++                    The internet is the primary storefront, classroom, and community center
++                    of the modern world. Having robust web development skills allows you to
++                    move beyond being a passive consumer of digital content to an active
++                    creator and shaper of the online experience.
++                </p>
++
++                <ul>
++                    <li>
++                        <strong>Empowerment and Autonomy:</strong>
++                        Building your own landing pages, blogs, or full-scale web applications
++                        means you no longer rely entirely on third-party platforms.
++                    </li>
++
++                    <li>
++                        <strong>Enhanced Problem-Solving:</strong>
++                        Learning to code teaches computational thinking by breaking large
++                        challenges into logical and manageable steps.
++                    </li>
++
++                    <li>
++                        <strong>Cross-Disciplinary Value:</strong>
++                        Understanding HTML, CSS, or JavaScript helps professionals communicate
++                        more effectively with engineering teams.
++                    </li>
++                </ul>
++            </article>
++
++            <aside>
++                <h4>Career Opportunities and Flexibility</h4>
++
++                <p>
++                    From a professional standpoint, web development remains an important
++                    career path. The demand for skilled front-end, back-end, and full-stack
++                    developers continues as companies improve their digital services.
++                    Web development also offers opportunities for remote work, freelancing,
++                    startup creation, and global collaboration.
++                </p>
++            </aside>
++        </section>
++
++    </main>
++
+     <footer>
+         <hr>
+         <p>Author: Prince Marky W. Panelo</p>
+-        <p><a href="https://www.facebook.com/yaffilda">My Facebook Page</a></p>
++        <p>
++            <a href="https://www.facebook.com/yaffilda">My Facebook Page</a>
++        </p>
+     </footer>
++
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 520c7425da388e663715c2fb101eeb30dfb0ba51
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-27 05:30:05 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-27 05:30:05 +0000
+
+    Sunday!
+
+diff --git a/Nebula - The Grey Room _ Density & Time.mp3 b/HTML-LAB/Nebula - The Grey Room _ Density & Time.mp3
+similarity index 100%
+rename from Nebula - The Grey Room _ Density & Time.mp3
+rename to HTML-LAB/Nebula - The Grey Room _ Density & Time.mp3
+diff --git a/HTML-LAB/mixkit-bee-pollinating-a-flower-7176-hd-ready.mp4 b/HTML-LAB/mixkit-bee-pollinating-a-flower-7176-hd-ready.mp4
+new file mode 100644
+index 0000000..bb92831
+Binary files /dev/null and b/HTML-LAB/mixkit-bee-pollinating-a-flower-7176-hd-ready.mp4 differ
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+index 1301d82..fd47761 100644
+--- a/HTML-LAB/multimedia.html
++++ b/HTML-LAB/multimedia.html
+@@ -6,9 +6,30 @@
+     <title>Multimedia</title>
+ </head>
+ <body>
+-    <audio controls>
++    <h1>Flower Seeking Pollinators</h1>
++    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyVhj62NVZoSu3rBl3Ds-tIXpVkn49mgJRvvSGn0gWEHF2OV_fkyhN2KU&s=10" 
++        alt="Flowers Seeking Pollinators"
++        width="340"
++        height="210">
++    <br>
+ 
+-        
++    <audio controls autoplay loop>
++        <source src="Nebula - The Grey Room _ Density & Time.mp3" type="audio/mpeg">
+     </audio>
++
++    <p>Plants, like all living things, reproduce to create future generations. Since plants cannot move, they need ways to transfer pollen from one plant to another. Wind can carry pollen, but insects such as bees and butterflies are more effective because they visit flowers directly. Flowers attract insects through their bright colors, strong scents, pollen, and nectar, which the insects collect for food. As insects move between flowers, they carry pollen with them, allowing fertilization to happen and seeds to form.</p>
++    <br>
++
++    <hr>
++    <h2>Flower Pollination</h2>
++    <p>By: MOconseration</p>
++    <iframe width="560" height="315" src="https://www.youtube.com/embed/ge3EM8AERV0?si=bMN4OAqHk3Js_HB5" title="Flower Pollination" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
++    <p></p>
++    <hr>
++
++    <h2>Clip of a Bee pollinating a flower</h2>
++    <video height="270" width="350" controls muted>
++        <source src="mixkit-bee-pollinating-a-flower-7176-hd-ready.mp4">
++    </video>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit f0fdf469beb36ec0233079a8b1efe0ac618cb30c
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-27 04:45:28 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-27 04:45:54 +0000
+
+    sunday commit
+
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index ed91464..2bb266b 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -25,12 +25,13 @@
+     <hr>
+     <h2>Prince Marky Panelo</h2>
+     <p>Bachelor of Science in Information Technology</p>
++    <p>CITCS 2I-B - Web Track</p>
+     <hr>
+     <h3>About Me</h3>
+     <p>I am a <strong>Web student!</strong> I am a Web student, Sir!!</p>    
+     <hr>
+     <h3>My Hobbies</h3>
+-    <p>I like gaming and photography.</p>
++    <p>I waste my time playing games and larping photography.</p>
+     <hr>
+ 
+     <h1 id="Yaffilda">
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+index b589fee..1301d82 100644
+--- a/HTML-LAB/multimedia.html
++++ b/HTML-LAB/multimedia.html
+@@ -6,10 +6,9 @@
+     <title>Multimedia</title>
+ </head>
+ <body>
+-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg8Pc5RE96DUKwBUfoJ2L5i7wmzbQ5574V0pods-mSQ&s=10" alt="Photo of Hatsune Miku"
+-    width="270"
+-    length="270">
+-    
+-    <audio src=""></audio>
++    <audio controls>
++
++        
++    </audio>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 7569a8b77784591d47a0bc73d5d746cfd9d0cf41
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-27 12:44:52 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-27 12:44:52 +0800
+
+    Add files via upload
+
+diff --git a/Nebula - The Grey Room _ Density & Time.mp3 b/Nebula - The Grey Room _ Density & Time.mp3
+new file mode 100644
+index 0000000..4e9a993
+Binary files /dev/null and b/Nebula - The Grey Room _ Density & Time.mp3 differ
+
+commit 0e12cb05632e258a49c49a322dcd0ca45643cf8b
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-25 01:57:45 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-25 01:57:45 +0000
+
+    commit today
+
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+new file mode 100644
+index 0000000..b589fee
+--- /dev/null
++++ b/HTML-LAB/multimedia.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Multimedia</title>
++</head>
++<body>
++    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg8Pc5RE96DUKwBUfoJ2L5i7wmzbQ5574V0pods-mSQ&s=10" alt="Photo of Hatsune Miku"
++    width="270"
++    length="270">
++    
++    <audio src=""></audio>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+index 1605171..6842668 100644
+--- a/HTML-LAB/semantic.html
++++ b/HTML-LAB/semantic.html
+@@ -9,7 +9,7 @@
+ <body>
+ <style>
+ aside {
+-    width: 30%;
++    width: 45%;
+     padding-left: 15px;
+     padding-right: 15px;
+     text-align: justify;
+
+commit 7f4d45e321e89a76b681e98c5773aa83b7675dcd
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-25 01:48:21 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-25 01:48:21 +0000
+
+    commit 25/09/26
+
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+index 4013508..648d90c 100644
+--- a/HTML-LAB/images.html
++++ b/HTML-LAB/images.html
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>images</title>
++    <title>Images</title>
+ </head>
+ <body>
+     
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index 79a5b06..ed91464 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -40,6 +40,7 @@
+         | <a href="images.html">Images</a>
+         | <a href="schedule.html">Schedule</a>
+         | <a href="registration.html">Registration</a>
++        | <a href="semantic.html">Semantic</a>
+ 
+     </h1>
+ 
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index 231c7b7..a675b16 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Registration</title>
+ </head>
+ <body>
+     <!DOCTYPE html>
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index 0ac27cd..dddbeca 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>schedule</title>
++    <title>Schedule</title>
+ </head>
+ <style>
+ table, th, td {
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+new file mode 100644
+index 0000000..1605171
+--- /dev/null
++++ b/HTML-LAB/semantic.html
+@@ -0,0 +1,60 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=
++    , initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++<style>
++aside {
++    width: 30%;
++    padding-left: 15px;
++    padding-right: 15px;
++    text-align: justify;
++    background-color: rgba(220, 220, 220, 0.646);
++}
++
++
++</style>
++    <article>
++        <header>
++            <h1>The Importance of Web Development Skills</h1>
++            <p>
++                In an era where a digital presence dictates the success of nearly every business, organization, and personal brand, web development has transitioned from a niche technical specialty into a fundamental literacy. Whether you are an entrepreneur, a marketing professional, or someone looking to pivot into a high-demand tech career, understanding how the web works—and how to build for it—unlocks unprecedented opportunities.</p>
++            <hr>
++        </header>
++    </article>
++    <nav>
++        <a href="index.html">Home</a> |
++        <a href="about.html">About</a> |
++        <a href="contact.html">Contact</a>   
++        <hr>
++    </nav>
++    <article style="padding-left: 15px;">
++        <h2>Why Web Development Matters</h2>
++        <p id="Article_2">
++            The internet is the primary storefront, classroom, and community center of the modern world. Having robust web development skills allows you to move beyond being a passive consumer of digital content to an active creator and shaper of the online experience.
++        </p>
++        <ul>
++            <li><strong>Empowerment and Autonomy: </strong>Building your own landing pages, blogs, or full-scale web applications means you no longer rely entirely on third-party platforms or expensive developers to bring an idea to life.</li>
++            <li><strong>Enhanced Problem-Solving:</strong> Learning to code teaches computational thinking—breaking large, complex challenges down into logical, manageable steps.</li>
++            <li><strong>Cross-Disciplinary Value:</strong> Professionals in marketing, design, and product management who understand HTML, CSS, or JavaScript can communicate more effectively with engineering teams and execute projects faster.</li>
++        </ul>
++    </article>
++
++    <aside>
++        <h4 style="text-align: center;">Career Opportunities and Flexibility</h4>
++        <p> 
++            From a professional standpoint, web development remains one of the most resilient and lucrative career paths. The demand for skilled front-end, back-end, and full-stack developers continues to surge as companies race to optimize their digital infrastructure for mobile and desktop users alike. Furthermore, web development offers unmatched career flexibility. It is an industry well-suited for remote work, freelancing, startup creation, and global collaboration, giving you the freedom to work from almost anywhere.
++        </p>
++    </aside>
++    
++    <footer>
++        <hr>
++        <p>Author: Prince Marky W. Panelo</p>
++        <p><a href="https://www.facebook.com/yaffilda">My Facebook Page</a></p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+
+commit e2e78ebcafd341d7c0b6563ce40a8fd516dc4c8e
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-25 00:21:02 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-25 00:21:02 +0000
+
+    8:20 AM
+
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index 972dc3d..79a5b06 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -5,6 +5,19 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Index</title>
+ </head>
++<style>
++#Yaffilda {
++    text-align: center;
++    text-decoration: none;
++}
++#Yaffilda a {
++    color: darkmagenta;
++}
++#Yaffilda a:hover{
++    color: rgb(236, 67, 236);
++}
++
++</style>
+ <body>
+ 
+     <hr>
+@@ -20,14 +33,15 @@
+     <p>I like gaming and photography.</p>
+     <hr>
+ 
+-    <h1>HTML Text Formatting</h1>
+-    <a href="formatting.html">Formatting Test</a>
+-    <br>
+-    <h1>Lists</h1>
+-    <a href="lists.html">List of Lists</a>
+-    <br>
+-    <h1>Links</h1>
+-    <a href="links.html">List of Links</a>
++    <h1 id="Yaffilda">
++        <a href="formatting.html">Formatting</a>
++        | <a href="lists.html">Lists</a>
++        | <a href="links.html">Links</a>
++        | <a href="images.html">Images</a>
++        | <a href="schedule.html">Schedule</a>
++        | <a href="registration.html">Registration</a>
++
++    </h1>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 0f7fd7de47a3162c071525922ca795e3202437d3
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-24 18:46:49 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-24 18:46:49 +0000
+
+    midnight-ish commit
+
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index e05178f..231c7b7 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -16,6 +16,7 @@
+ <body>
+ 
+     <h1>Student Registration Form</h1>
++    <hr>
+ 
+     <form>
+ 
+@@ -94,6 +95,7 @@
+         <button type="reset">Reset</button>
+ 
+     </form>
++    <hr>
+ </body>
+ </html>
+ </body>
+
+commit 01796cea6e422f1018bb1fe2505104d98a6b0503
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-24 18:44:37 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-24 18:44:37 +0000
+
+    midnight commit
+
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index d01f779..e05178f 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -6,6 +6,95 @@
+     <title>Document</title>
+ </head>
+ <body>
+-    
++    <!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Student Registration Form</title>
++</head>
++<body>
++
++    <h1>Student Registration Form</h1>
++
++    <form>
++
++        <label for="fullname">Full Name:</label>
++        <input type="text" id="fullname" name="fullname"
++            placeholder="Last Name, First Name"
++            minlength="2" maxlength="50" required>
++        <br><br>
++
++        <label for="studentid">Student ID:</label>
++        <input type="text" id="studentid" name="studentid"
++            placeholder="##-####-###"
++            required>
++        <br><br>
++
++        <label for="email">Email:</label>
++        <input type="email" id="email" name="email"
++            placeholder="example@email.com" required>
++        <br><br>
++
++        <label for="password">Password:</label>
++        <input type="password" id="password" name="password"
++            placeholder="Enter your password"
++            minlength="8" maxlength="20" required>
++        <br><br>
++
++        <label for="birthday">Birthday:</label>
++        <input type="date" id="birthday" name="birthday" required>
++        <br><br>
++
++        <label>Gender:</label>
++        <br>
++        <input type="radio" id="male" name="gender" value="Male" required>
++        <label for="male">Male</label>
++
++        <input type="radio" id="female" name="gender" value="Female">
++        <label for="female">Female</label>
++
++        <input type="radio" id="other" name="gender" value="Other">
++        <label for="other">Other</label>
++        <br><br>
++
++        <label for="program">Program:</label>
++        <select id="program" name="program" required>
++            <option value="">Select Program</option>
++            <option value="BSIT">BSIT</option>
++            <option value="BSCS">BSCS</option>
++            <option value="BSIS">BSIS</option>
++            <option value="BSE">BSE</option>
++        </select>
++        <br><br>
++
++        <label for="hobbiesid">Hobbies:</label>
++        <br>
++        
++        <input type="text" id="hobbiesid" name="hobbiesid"
++        placeholder="Any Hobby/s"
++        required>
++        <br><br>
++
++        <label for="address">Address:</label>
++        <br>
++        <textarea id="address" name="address"
++            placeholder="Enter your address"
++            maxlength="150" required></textarea>
++        <br><br>
++
++        <label for="comments">Comments:</label>
++        <br>
++        <textarea id="comments" name="comments"
++            placeholder="Enter your comments"
++            maxlength="300"></textarea>
++        <br><br>
++
++        <button type="submit">Submit</button>
++        <button type="reset">Reset</button>
++
++    </form>
++</body>
++</html>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 800d5ceba11eeea94ecd49853eed3343418eae4d
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-24 18:29:24 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-24 18:29:54 +0000
+
+    9/25/26 (2)
+
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+index 28db07d..4013508 100644
+--- a/HTML-LAB/images.html
++++ b/HTML-LAB/images.html
+@@ -7,18 +7,20 @@
+ </head>
+ <body>
+     
+-    <a href="https://youtu.be/dQw4w9WgXcQ?si=2wX5Ksyo-ZRbbnpg" target="_blank">
+-        <img src="https://i1.sndcdn.com/artworks-x8zI2HVC2pnkK7F5-4xKLyA-t500x500.jpg"
+-            alt="Profile Photo" 
+-            width="200" 
+-            height="200">
++    <a href="https://www.facebook.com/yaffilda" target="_blank">
++        <img src="https://raw.githubusercontent.com/PaneloMarky/Webtech/main/Marky9207.jpeg"
++            alt="Marky's Profile Photo" 
++            width="270" 
++            height="270">
+     </a>
+ 
+     <h3>Prince Marky W. Panelo</h3>
+-    <p>(Placeholder Photo) <br>
++    <p>CITCS 2I - B <br>
+         <br>
+-        Second-Year BSIT Student majoring in Web Development Track. <br>
+-        I like turtles 
++        Currently a Second-Year BSIT Student majoring in Web Development Track. <br>
++        I like gaming and I’m currently learning different coding languages such as <br>
++        HTML, CSS, C#, and JavaScript.
++
+ 
+     </p>
+          
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+new file mode 100644
+index 0000000..d01f779
+--- /dev/null
++++ b/HTML-LAB/registration.html
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++    
++</body>
++</html>
+\ No newline at end of file
+
+commit cec390223a3e87b6fb46e97611fca8f7f9442761
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-25 02:20:54 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-25 02:20:54 +0800
+
+    Add files via upload
+
+diff --git a/Marky9207.jpeg b/Marky9207.jpeg
+new file mode 100644
+index 0000000..34e08c5
+Binary files /dev/null and b/Marky9207.jpeg differ
+
+commit deb26fe22f04cd1a043c90fe8b8f47cb36322055
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-25 02:17:33 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-25 02:17:33 +0800
+
+    Delete Marky9207.jpeg
+
+diff --git a/Marky9207.jpeg b/Marky9207.jpeg
+deleted file mode 100644
+index 34e08c5..0000000
+Binary files a/Marky9207.jpeg and /dev/null differ
+
+commit bcdc12e99a1156401508aedc12b978be280829a4
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-25 02:11:12 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-25 02:11:12 +0800
+
+    Add files via upload
+
+diff --git a/Marky9207.jpeg b/Marky9207.jpeg
+new file mode 100644
+index 0000000..34e08c5
+Binary files /dev/null and b/Marky9207.jpeg differ
+
+commit e4049f71abbeea068619ffb7ab4d3784fb703134
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-24 17:59:27 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-24 17:59:27 +0000
+
+    9/25/26
+
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index 4cedee9..0ac27cd 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -11,74 +11,195 @@ table, th, td {
+ }
+ </style>
+ <body>
+-    <table style="width:100%">
+-        <tr>
+-            <th>Day</th>
+-            <th>Time</th>
+-            <th>Subject</th>
+-            <th>Room</th>
+-            <th>Instructor</th>
+-        </tr>
+-        <tr>
+-            <td>Monday</td>
+-            <td>8:50 AM</td>
+-            <td>CIT14</td>
+-            <td>M307</td>
+-            <td>Sir Prim</td>
+-        </tr>
+-        <tr>
+-            <td>Tuesday</td>
+-            <td>7:30 AM</td>
+-            <td>CC5</td>
+-            <td>U704</td>
+-            <td>Sir Joshua</td>
+-        </tr>
+-        <tr>
+-            <td>Wednesday</td>
+-            <td>2:10 PM</td>
+-            <td>CIT5</td>
+-            <td>U705</td>
+-            <td>Sir Walter</td>
+-        </tr>
+-        <tr>
+-            <td>Thursday</td>
+-            <td>8:50 AM</td>
+-            <td>CC5</td>
+-            <td>S312</td>
+-            <td>Sir Joshua</td>
+-        </tr>
+-        <tr>
+-            <td>Friday</td>
+-            <td>8:50 AM</td>
+-            <td>CIT14</td>
+-            <td>M307</td>
+-            <td>Sir Prim</td>
+-        </tr>
+-    </table>
+-    <hr>
+-    <table style="width: 50%;">
+-        <tr>
+-            <th colspan="2"> </th>
+-            <th>Monday</th>
+-            <th>Tuesday</th>
+-            <th>Wednesday</th>
+-            <th>Thursday</th>
+-            <th>Friday</th>
+-            <th>Saturday</th>
+-            <th>TEST</th>
+-        </tr>
+-        <tr>
+-            <td>test</td>
+-            <td>test</td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
+-        </tr>
++<table border="1" style="width: 100%;">
++    <tr>
++        <th colspan="5">CITCS 2I (B) - BSIT Web Track</th>
++    </tr>
++
++    <tr>
++        <th>Day</th>
++        <th>Time</th>
++        <th>Subject</th>
++        <th>Room</th>
++        <th>Instructor</th>
++    </tr>
++
++    <tr>
++        <td rowspan="4">Monday</td>
++        <td>7:30 AM - 8:50 AM</td>
++        <td>CIT1</td>
++        <td>S312</td>
++        <td>Jessie Martirez</td>
++    </tr>
++    <tr>
++        <td>8:50 AM - 10:10 AM</td>
++        <td>CIT14 (LAB)</td>
++        <td>M307</td>
++        <td>Leonard Prim Francis Reyes</td>
++    </tr>
++    <tr>
++        <td>10:10 AM - 11:30 AM</td>
++        <td>CIT14 (LEC)</td>
++        <td>FLD</td>
++        <td>Leonard Prim Francis Reyes</td>
++    </tr>
++    <tr>
++        <td>2:10 PM - 3:30 PM</td>
++        <td>CIT5</td>
++        <td>U705</td>
++        <td>Walter Mang-usan</td>
++    </tr>
++
++    <tr>
++        <th colspan="5"></th>
++    </tr>
++
++    <tr>
++        <td rowspan="5">Tuesday</td>
++        <td>7:30 AM - 8:50 AM</td>
++        <td>CC5 (LEC)</td>
++        <td>U704</td>
++        <td>Joshua Carbie Almarez</td>
++    </tr>
++    <tr>
++        <td>8:50 AM - 10:10 AM</td>
++        <td>CC5 (LAB)</td>
++        <td>S312</td>
++        <td>Joshua Carbie Almarez</td>
++    </tr>
++    <tr>
++        <td>12:50 PM - 2:10 PM</td>
++        <td>SOCSCI101N</td>
++        <td>G205</td>
++        <td>Ma. Florida Dela Cruz</td>
++    </tr>
++    <tr>
++        <td>3:30 PM - 4:50 PM</td>
++        <td>PATHFIT4</td>
++        <td>GYM</td>
++        <td>Leo Patrick Ninalga</td>
++    </tr>
++    <tr>
++        <td>6:10 PM - 7:30 PM</td>
++        <td>SCIENCE100</td>
++        <td>G203</td>
++        <td>Maria Elena Catajan</td>
++    </tr>
++
++    <tr>
++        <th colspan="5"></th>
++    </tr>
++
++    <tr>
++        <td rowspan="4">Wednesday</td>
++        <td>7:30 AM - 8:50 AM</td>
++        <td>CIT1</td>
++        <td>S312</td>
++        <td>Jessie Martirez</td>
++    </tr>
++    <tr>
++        <td>8:50 AM - 10:10 AM</td>
++        <td>CIT14 (LAB)</td>
++        <td>M307</td>
++        <td>Leonard Prim Francis Reyes</td>
++    </tr>
++    <tr>
++        <td>10:10 AM - 11:30 AM</td>
++        <td>CIT14 (LEC)</td>
++        <td>FLD</td>
++        <td>Leonard Prim Francis Reyes</td>
++    </tr>
++    <tr>
++        <td>2:10 PM - 3:30 PM</td>
++        <td>CIT5</td>
++        <td>U705</td>
++        <td>Walter Mang-usan</td>
++    </tr>
++
++    <tr>
++        <th colspan="5"></th>
++    </tr>
++
++    <tr>
++        <td rowspan="5">Thursday</td>
++        <td>7:30 AM - 8:50 AM</td>
++        <td>CC5 (LEC)</td>
++        <td>U704</td>
++        <td>Joshua Carbie Almarez</td>
++    </tr>
++    <tr>
++        <td>8:50 AM - 10:10 AM</td>
++        <td>CC5 (LAB)</td>
++        <td>S312</td>
++        <td>Joshua Carbie Almarez</td>
++    </tr>
++    <tr>
++        <td>12:50 PM - 2:10 PM</td>
++        <td>SOCSCI101N</td>
++        <td>G205</td>
++        <td>Ma. Florida Dela Cruz</td>
++    </tr>
++    <tr>
++        <td>3:30 PM - 4:50 PM</td>
++        <td>PATHFIT4</td>
++        <td>GYM</td>
++        <td>Leo Patrick Ninalga</td>
++    </tr>
++    <tr>
++        <td>6:10 PM - 7:30 PM</td>
++        <td>SCIENCE100</td>
++        <td>G203</td>
++        <td>Maria Elena Catajan</td>
++    </tr>
++
++    <tr>
++        <th colspan="5"></th>
++    </tr>
++
++    <tr>
++        <td rowspan="3">Friday</td>
++        <td>7:30 AM - 8:50 AM</td>
++        <td>CIT1</td>
++        <td>S312</td>
++        <td>Jessie Martirez</td>
++    </tr>
++    <tr>
++        <td>8:50 AM - 10:10 AM</td>
++        <td>CIT14 (LAB)</td>
++        <td>M307</td>
++        <td>Leonard Prim Francis Reyes</td>
++    </tr>
++    <tr>
++        <td>2:10 PM - 3:30 PM</td>
++        <td>CIT5</td>
++        <td>U705</td>
++        <td>Walter Mang-usan</td>
++    </tr>
++
++    <tr>
++        <th colspan="5"></th>
++    </tr>
++    
++    <tr>
++        <td rowspan="3">Saturday</td>
++        <td>8:50 AM - 10:10 AM</td>
++        <td>CC5 (LAB)</td>
++        <td>S312</td>
++        <td>Joshua Carbie Almarez</td>
++    </tr>
++    <tr>
++        <td>12:50 PM - 2:10 PM</td>
++        <td>SOCSCI101N</td>
++        <td>G205</td>
++        <td>Ma. Florida Dela Cruz</td>
++    </tr>
++    <tr>
++        <td>6:10 PM - 7:30 PM</td>
++        <td>SCIENCE100</td>
++        <td>G203</td>
++        <td>Maria Elena Catajan</td>
++    </tr>
++</table>
+ 
+-    </table>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 039ee144a9294faf14eae1f051de3d40457691f4
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-23 01:38:07 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-23 01:43:46 +0000
+
+    23/09/26 (2)
+
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index 73b2789..4cedee9 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -56,5 +56,29 @@ table, th, td {
+         </tr>
+     </table>
+     <hr>
++    <table style="width: 50%;">
++        <tr>
++            <th colspan="2"> </th>
++            <th>Monday</th>
++            <th>Tuesday</th>
++            <th>Wednesday</th>
++            <th>Thursday</th>
++            <th>Friday</th>
++            <th>Saturday</th>
++            <th>TEST</th>
++        </tr>
++        <tr>
++            <td>test</td>
++            <td>test</td>
++            <td></td>
++            <td></td>
++            <td></td>
++            <td></td>
++            <td></td>
++            <td></td>
++            <td></td>
++        </tr>
++
++    </table>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit fd63d4dea73b43e30c48687f2ad989b5e9d602f9
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-23 09:15:51 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-23 09:15:51 +0800
+
+    Update README.md
+
+diff --git a/README.md b/README.md
+index 6000692..e44229a 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1 @@
+ Hello, Prince Marky Panelo!
+-
+-git add .
+-git commit -m "<comment>"
+-git push
+
+commit 56c478b713fcae89f6e3d732148ce1d0745454c0
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-23 09:15:40 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-23 09:15:40 +0800
+
+    Include Git commands in README
+    
+    Add basic Git commands to README for usage guidance.
+
+diff --git a/README.md b/README.md
+index 6a73c15..6000692 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,5 @@
+ Hello, Prince Marky Panelo!
+ 
++git add .
++git commit -m "<comment>"
++git push
+
+commit abc4525c36bcf6d6d9f1ad1397ff4e8b9800d0bd
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-23 01:14:08 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-23 01:14:08 +0000
+
+    23/09/26
+
+diff --git a/.vscode/launch.json b/.vscode/launch.json
+deleted file mode 100644
+index f785063..0000000
+--- a/.vscode/launch.json
++++ /dev/null
+@@ -1,10 +0,0 @@
+-{
+-    "configurations": [
+-        {
+-            "type": "chrome",
+-            "name": "http://127.0.0.1:3000/HTML-LAB/index.html",
+-            "request": "launch",
+-            "url": "http://127.0.0.1:3000/HTML-LAB/index.html"
+-        }
+-    ]
+-}
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index 80aa256..73b2789 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -23,16 +23,37 @@ table, th, td {
+             <td>Monday</td>
+             <td>8:50 AM</td>
+             <td>CIT14</td>
+-            <td>LAB</td>
++            <td>M307</td>
+             <td>Sir Prim</td>
+         </tr>
+         <tr>
+             <td>Tuesday</td>
+             <td>7:30 AM</td>
+             <td>CC5</td>
+-            <td>LEC</td>
++            <td>U704</td>
+             <td>Sir Joshua</td>
+         </tr>
++        <tr>
++            <td>Wednesday</td>
++            <td>2:10 PM</td>
++            <td>CIT5</td>
++            <td>U705</td>
++            <td>Sir Walter</td>
++        </tr>
++        <tr>
++            <td>Thursday</td>
++            <td>8:50 AM</td>
++            <td>CC5</td>
++            <td>S312</td>
++            <td>Sir Joshua</td>
++        </tr>
++        <tr>
++            <td>Friday</td>
++            <td>8:50 AM</td>
++            <td>CIT14</td>
++            <td>M307</td>
++            <td>Sir Prim</td>
++        </tr>
+     </table>
+     <hr>
+ </body>
+diff --git a/Webtech b/Webtech
+deleted file mode 160000
+index 5c64e1d..0000000
+--- a/Webtech
++++ /dev/null
+@@ -1 +0,0 @@
+-Subproject commit 5c64e1d1f708869c0cfe139694ec683cddb99626
+
+commit 2eab8966ac8b1c7c0f9a5b64957d43ea82d7a0ca
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-21 01:57:36 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-21 01:57:36 +0000
+
+    commit 09/21/26 (3)
+
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index 4a1a822..80aa256 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -28,10 +28,10 @@ table, th, td {
+         </tr>
+         <tr>
+             <td>Tuesday</td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
+-            <td></td>
++            <td>7:30 AM</td>
++            <td>CC5</td>
++            <td>LEC</td>
++            <td>Sir Joshua</td>
+         </tr>
+     </table>
+     <hr>
+
+commit 929514ac91bac672fc3ec6c226f669bd34cae3aa
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-21 01:52:05 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-21 01:52:05 +0000
+
+    commit 21/09/26 (2)
+
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+index 1f1f7d0..28db07d 100644
+--- a/HTML-LAB/images.html
++++ b/HTML-LAB/images.html
+@@ -15,7 +15,12 @@
+     </a>
+ 
+     <h3>Prince Marky W. Panelo</h3>
+-    <p>(Placeholder Photo)</p>
++    <p>(Placeholder Photo) <br>
++        <br>
++        Second-Year BSIT Student majoring in Web Development Track. <br>
++        I like turtles 
++
++    </p>
+          
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+index a85e7ff..4a1a822 100644
+--- a/HTML-LAB/schedule.html
++++ b/HTML-LAB/schedule.html
+@@ -6,21 +6,34 @@
+     <title>schedule</title>
+ </head>
+ <style>
+-
+-
++table, th, td {
++  border:1px solid black;
++}
+ </style>
+ <body>
+     <table style="width:100%">
+         <tr>
+-            <td>Day</td>
+-            <td>Time</td>
+-            <td>Subject</td>
+-            <td>Room</td>
+-            <td>Instructor</td>
++            <th>Day</th>
++            <th>Time</th>
++            <th>Subject</th>
++            <th>Room</th>
++            <th>Instructor</th>
++        </tr>
++        <tr>
++            <td>Monday</td>
++            <td>8:50 AM</td>
++            <td>CIT14</td>
++            <td>LAB</td>
++            <td>Sir Prim</td>
++        </tr>
++        <tr>
++            <td>Tuesday</td>
++            <td></td>
++            <td></td>
++            <td></td>
++            <td></td>
+         </tr>
+-
+-
+-        
+     </table>
++    <hr>
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 83783779e9127580743a81635901b884d8d91b49
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-21 01:37:43 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-21 01:37:43 +0000
+
+    21/09/26
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+new file mode 100644
+index 0000000..0801170
+--- /dev/null
++++ b/HTML-LAB/formatting.html
+@@ -0,0 +1,41 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Formatting</title>
++</head>
++<body>
++
++    <h1>HTML Text Formatting</h1>
++    <p>
++        This is a <b>bold</b> text. <br>
++        This is a <strong>strong</strong> text. <br>
++        <br>
++        This is an <i>italicized</i> text. <br>
++        This is an <em>emphasized</em> text. <br>
++        <br>
++        <u>This sentence is underlined.</u> <br>
++        <br>
++        <mark>And this sentence is marked or highlighted.</mark> <br>
++        <br>
++        <small>Small text is used in this sentence!</small> <br>
++        <br>
++        <del>The text shown here are deleted or crossed out.</del> <br>
++        <br>
++        This <ins>text</ins> is inserted. While it may look the same as an underlined text, both are different. <br>
++        <br>
++        The element "sub" was used for this <sub>text.</sub> <br>
++        <br>
++        Lastly, the element "sup" was used for this <sup>text.</sup>
++    </p>
++
++    <h2>Challenge Answer:</h2>
++    <p>
++        H<sub>2</sub>0
++        <br>
++        E = mc<sup>2</sup>
++    </p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+new file mode 100644
+index 0000000..1f1f7d0
+--- /dev/null
++++ b/HTML-LAB/images.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>images</title>
++</head>
++<body>
++    
++    <a href="https://youtu.be/dQw4w9WgXcQ?si=2wX5Ksyo-ZRbbnpg" target="_blank">
++        <img src="https://i1.sndcdn.com/artworks-x8zI2HVC2pnkK7F5-4xKLyA-t500x500.jpg"
++            alt="Profile Photo" 
++            width="200" 
++            height="200">
++    </a>
++
++    <h3>Prince Marky W. Panelo</h3>
++    <p>(Placeholder Photo)</p>
++         
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+new file mode 100644
+index 0000000..972dc3d
+--- /dev/null
++++ b/HTML-LAB/index.html
+@@ -0,0 +1,33 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Index</title>
++</head>
++<body>
++
++    <hr>
++    <h1>My Personal Page</h1>
++    <hr>
++    <h2>Prince Marky Panelo</h2>
++    <p>Bachelor of Science in Information Technology</p>
++    <hr>
++    <h3>About Me</h3>
++    <p>I am a <strong>Web student!</strong> I am a Web student, Sir!!</p>    
++    <hr>
++    <h3>My Hobbies</h3>
++    <p>I like gaming and photography.</p>
++    <hr>
++
++    <h1>HTML Text Formatting</h1>
++    <a href="formatting.html">Formatting Test</a>
++    <br>
++    <h1>Lists</h1>
++    <a href="lists.html">List of Lists</a>
++    <br>
++    <h1>Links</h1>
++    <a href="links.html">List of Links</a>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+new file mode 100644
+index 0000000..b332538
+--- /dev/null
++++ b/HTML-LAB/links.html
+@@ -0,0 +1,46 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Links</title>
++</head>
++<style>
++#Navigation {
++    text-align: center;
++    text-decoration: none;
++}
++#Navigation a {
++    text-decoration: none;
++    color: black;
++}
++#Navigation a:hover {
++    color: rgb(218, 14, 218);
++}
++#Links a:link {
++    color: rgb(195, 109, 207);
++}
++#Links a:hover {
++    color: darkolivegreen;
++}
++#Links a:visited{
++    color: rgb(239, 150, 165)
++}
++</style>
++<body>
++    <h1>Links and Navigation</h1>
++    <ul id="Links">
++        <li><a href="https://www.google.com/" target="_blank">Link to Google</a></li>
++        <li><a href="https://www.youtube.com/" target="_blank">Link to Youtube</a></li>
++        <li><a href="https://github.com/" target="_blank">Link to Github</a></li>
++        <li><a href="https://www.uc-bcf.edu.ph/" target="_blank">Link to University of the Cordilleras' Site</a></li>
++    </ul>
++    <hr>
++    <h1 id="Navigation">
++        <a href="index.html">Home</a> 
++        | <a href="about.html">About</a> 
++        | <a href="contact.html">Contact</a>
++    </h1> 
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+new file mode 100644
+index 0000000..e0a5243
+--- /dev/null
++++ b/HTML-LAB/lists.html
+@@ -0,0 +1,48 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lists</title>
++</head>
++<body>
++    <h1>Lists</h1>
++    <h2>A. Unordered List</h2>
++    <p>List of My Favorite Foods</p>
++    <ul>
++        <li>Burgers</li>
++        <li>Escabeche</li>
++        <li>Dumplings</li>
++        <li>Sisig</li>
++        <li>Souls of The Damned</li>
++    </ul>
++
++    <h2>B. Ordered List</h2>
++    <p>Top 5 Programming Languages</p>
++    <ol>
++        <li>Java</li>
++        <li>C#</li>
++        <li>Python</li>
++        <li>Javascript</li>
++        <li>HTML</li>
++    </ol>
++
++    <h2>C. Nested List</h2>
++    <p>Computer Science</p>
++    <ul>
++        <li>Programming</li>
++            <ul>
++                <li>Java</li>
++                <li>Python</li>
++                <li>PHP</li>
++            </ul><br>
++        <li>Web Development</li>
++            <ul>
++                <li>HTML</li>
++                <li>CSS</li>
++                <li>JavaScript</li>
++            </ul>
++    </ul>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+new file mode 100644
+index 0000000..a85e7ff
+--- /dev/null
++++ b/HTML-LAB/schedule.html
+@@ -0,0 +1,26 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>schedule</title>
++</head>
++<style>
++
++
++</style>
++<body>
++    <table style="width:100%">
++        <tr>
++            <td>Day</td>
++            <td>Time</td>
++            <td>Subject</td>
++            <td>Room</td>
++            <td>Instructor</td>
++        </tr>
++
++
++        
++    </table>
++</body>
++</html>
+\ No newline at end of file
+
+commit 49522bb99023776e8068199cde9f40bcb8c95cc2
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-21 01:35:45 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-21 01:35:45 +0000
+
+    21/09/26
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+deleted file mode 100644
+index 0801170..0000000
+--- a/HTML-LAB/formatting.html
++++ /dev/null
+@@ -1,41 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Formatting</title>
+-</head>
+-<body>
+-
+-    <h1>HTML Text Formatting</h1>
+-    <p>
+-        This is a <b>bold</b> text. <br>
+-        This is a <strong>strong</strong> text. <br>
+-        <br>
+-        This is an <i>italicized</i> text. <br>
+-        This is an <em>emphasized</em> text. <br>
+-        <br>
+-        <u>This sentence is underlined.</u> <br>
+-        <br>
+-        <mark>And this sentence is marked or highlighted.</mark> <br>
+-        <br>
+-        <small>Small text is used in this sentence!</small> <br>
+-        <br>
+-        <del>The text shown here are deleted or crossed out.</del> <br>
+-        <br>
+-        This <ins>text</ins> is inserted. While it may look the same as an underlined text, both are different. <br>
+-        <br>
+-        The element "sub" was used for this <sub>text.</sub> <br>
+-        <br>
+-        Lastly, the element "sup" was used for this <sup>text.</sup>
+-    </p>
+-
+-    <h2>Challenge Answer:</h2>
+-    <p>
+-        H<sub>2</sub>0
+-        <br>
+-        E = mc<sup>2</sup>
+-    </p>
+-
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+deleted file mode 100644
+index 972dc3d..0000000
+--- a/HTML-LAB/index.html
++++ /dev/null
+@@ -1,33 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Index</title>
+-</head>
+-<body>
+-
+-    <hr>
+-    <h1>My Personal Page</h1>
+-    <hr>
+-    <h2>Prince Marky Panelo</h2>
+-    <p>Bachelor of Science in Information Technology</p>
+-    <hr>
+-    <h3>About Me</h3>
+-    <p>I am a <strong>Web student!</strong> I am a Web student, Sir!!</p>    
+-    <hr>
+-    <h3>My Hobbies</h3>
+-    <p>I like gaming and photography.</p>
+-    <hr>
+-
+-    <h1>HTML Text Formatting</h1>
+-    <a href="formatting.html">Formatting Test</a>
+-    <br>
+-    <h1>Lists</h1>
+-    <a href="lists.html">List of Lists</a>
+-    <br>
+-    <h1>Links</h1>
+-    <a href="links.html">List of Links</a>
+-
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+deleted file mode 100644
+index 5890ff7..0000000
+--- a/HTML-LAB/links.html
++++ /dev/null
+@@ -1,45 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Links</title>
+-</head>
+-<style>
+-#Navigation {
+-    text-align: center;
+-    text-decoration: none;
+-}
+-#Navigation a {
+-    text-decoration: none;
+-    color: black;
+-}
+-#Navigation a:hover {
+-    color: rgb(218, 14, 218);
+-}
+-#Links a:link {
+-    color: rgb(195, 109, 207);
+-}
+-#Links a:hover {
+-    color: darkolivegreen;
+-}
+-#Links a:visited{
+-    color: rgb(239, 150, 165)
+-}
+-</style>
+-<body>
+-    <h1>Links</h1>
+-    <ul id="Links">
+-        <li><a href="https://www.google.com/" target="_blank">Link to Google</a></li>
+-        <li><a href="https://www.youtube.com/" target="_blank">Link to Youtube</a></li>
+-        <li><a href="https://github.com/" target="_blank">Link to Github</a></li>
+-        <li><a href="https://www.uc-bcf.edu.ph/" target="_blank">Link to University of the Cordilleras' Site</a></li>
+-    </ul>
+-
+-    <h1 id="Navigation">
+-        <a href="index.html">Home</a> 
+-        | <a href="about.html">About</a> 
+-        | <a href="contact.html">Contact</a></h1> 
+-    
+-</body>
+-</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+deleted file mode 100644
+index e0a5243..0000000
+--- a/HTML-LAB/lists.html
++++ /dev/null
+@@ -1,48 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Lists</title>
+-</head>
+-<body>
+-    <h1>Lists</h1>
+-    <h2>A. Unordered List</h2>
+-    <p>List of My Favorite Foods</p>
+-    <ul>
+-        <li>Burgers</li>
+-        <li>Escabeche</li>
+-        <li>Dumplings</li>
+-        <li>Sisig</li>
+-        <li>Souls of The Damned</li>
+-    </ul>
+-
+-    <h2>B. Ordered List</h2>
+-    <p>Top 5 Programming Languages</p>
+-    <ol>
+-        <li>Java</li>
+-        <li>C#</li>
+-        <li>Python</li>
+-        <li>Javascript</li>
+-        <li>HTML</li>
+-    </ol>
+-
+-    <h2>C. Nested List</h2>
+-    <p>Computer Science</p>
+-    <ul>
+-        <li>Programming</li>
+-            <ul>
+-                <li>Java</li>
+-                <li>Python</li>
+-                <li>PHP</li>
+-            </ul><br>
+-        <li>Web Development</li>
+-            <ul>
+-                <li>HTML</li>
+-                <li>CSS</li>
+-                <li>JavaScript</li>
+-            </ul>
+-    </ul>
+-
+-</body>
+-</html>
+\ No newline at end of file
+
+commit 21debffff715e8700cef2a14916f4c0bdee1e1b4
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-20 07:43:36 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-20 07:43:36 +0000
+
+    commit 9/20/26
+
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+index 1448708..0801170 100644
+--- a/HTML-LAB/formatting.html
++++ b/HTML-LAB/formatting.html
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Formatting</title>
+ </head>
+ <body>
+ 
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index ec06163..972dc3d 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -3,7 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Index</title>
+ </head>
+ <body>
+ 
+@@ -22,7 +22,12 @@
+ 
+     <h1>HTML Text Formatting</h1>
+     <a href="formatting.html">Formatting Test</a>
+-    
++    <br>
++    <h1>Lists</h1>
++    <a href="lists.html">List of Lists</a>
++    <br>
++    <h1>Links</h1>
++    <a href="links.html">List of Links</a>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+new file mode 100644
+index 0000000..5890ff7
+--- /dev/null
++++ b/HTML-LAB/links.html
+@@ -0,0 +1,45 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Links</title>
++</head>
++<style>
++#Navigation {
++    text-align: center;
++    text-decoration: none;
++}
++#Navigation a {
++    text-decoration: none;
++    color: black;
++}
++#Navigation a:hover {
++    color: rgb(218, 14, 218);
++}
++#Links a:link {
++    color: rgb(195, 109, 207);
++}
++#Links a:hover {
++    color: darkolivegreen;
++}
++#Links a:visited{
++    color: rgb(239, 150, 165)
++}
++</style>
++<body>
++    <h1>Links</h1>
++    <ul id="Links">
++        <li><a href="https://www.google.com/" target="_blank">Link to Google</a></li>
++        <li><a href="https://www.youtube.com/" target="_blank">Link to Youtube</a></li>
++        <li><a href="https://github.com/" target="_blank">Link to Github</a></li>
++        <li><a href="https://www.uc-bcf.edu.ph/" target="_blank">Link to University of the Cordilleras' Site</a></li>
++    </ul>
++
++    <h1 id="Navigation">
++        <a href="index.html">Home</a> 
++        | <a href="about.html">About</a> 
++        | <a href="contact.html">Contact</a></h1> 
++    
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+new file mode 100644
+index 0000000..e0a5243
+--- /dev/null
++++ b/HTML-LAB/lists.html
+@@ -0,0 +1,48 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lists</title>
++</head>
++<body>
++    <h1>Lists</h1>
++    <h2>A. Unordered List</h2>
++    <p>List of My Favorite Foods</p>
++    <ul>
++        <li>Burgers</li>
++        <li>Escabeche</li>
++        <li>Dumplings</li>
++        <li>Sisig</li>
++        <li>Souls of The Damned</li>
++    </ul>
++
++    <h2>B. Ordered List</h2>
++    <p>Top 5 Programming Languages</p>
++    <ol>
++        <li>Java</li>
++        <li>C#</li>
++        <li>Python</li>
++        <li>Javascript</li>
++        <li>HTML</li>
++    </ol>
++
++    <h2>C. Nested List</h2>
++    <p>Computer Science</p>
++    <ul>
++        <li>Programming</li>
++            <ul>
++                <li>Java</li>
++                <li>Python</li>
++                <li>PHP</li>
++            </ul><br>
++        <li>Web Development</li>
++            <ul>
++                <li>HTML</li>
++                <li>CSS</li>
++                <li>JavaScript</li>
++            </ul>
++    </ul>
++
++</body>
++</html>
+\ No newline at end of file
+
+commit ec3e078d1038a5745161255937fbc3db8bcf86ed
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-20 06:27:53 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-20 06:27:53 +0000
+
+    9/20/26
+
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+index 8a65d7b..1448708 100644
+--- a/HTML-LAB/formatting.html
++++ b/HTML-LAB/formatting.html
+@@ -9,12 +9,33 @@
+ 
+     <h1>HTML Text Formatting</h1>
+     <p>
+-        This is a <b>bold</b> text,
+-        and this is also a <strong>bold</strong> text.
+-
+-
++        This is a <b>bold</b> text. <br>
++        This is a <strong>strong</strong> text. <br>
++        <br>
++        This is an <i>italicized</i> text. <br>
++        This is an <em>emphasized</em> text. <br>
++        <br>
++        <u>This sentence is underlined.</u> <br>
++        <br>
++        <mark>And this sentence is marked or highlighted.</mark> <br>
++        <br>
++        <small>Small text is used in this sentence!</small> <br>
++        <br>
++        <del>The text shown here are deleted or crossed out.</del> <br>
++        <br>
++        This <ins>text</ins> is inserted. While it may look the same as an underlined text, both are different. <br>
++        <br>
++        The element "sub" was used for this <sub>text.</sub> <br>
++        <br>
++        Lastly, the element "sup" was used for this <sup>text.</sup>
+     </p>
+ 
++    <h2>Challenge Answer:</h2>
++    <p>
++        H<sub>2</sub>0
++        <br>
++        E = mc<sup>2</sup>
++    </p>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index f8b9078..ec06163 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -21,27 +21,8 @@
+     <hr>
+ 
+     <h1>HTML Text Formatting</h1>
+-    <p>
+-        This is a <b>bold</b> text,
+-        and this is also a <strong>bold</strong> text.
+-        <br>
+-        This is an <i>italicized text.</i>
+-        This is an <em>emphasized text.</em>
+-        <br>
+-        <u>This entire sentence is underlined</u>. <ins> "ins" was used for this 2nd sentence. </ins>
+-        <br>
+-        <mark>This is a highlighted line, or a marked line.</mark>
+-        <br>
+-        <small>This is a small text.</small> <sub>"sub" was used for this second sentence.</sub>
+-        <sup>"sup" was used for the third sentence.</sup>
+-        <br>
+-        <del>This is a "del" text</del>
+-        <br>
+-        
+-        
+-
+-
+-    </p>
++    <a href="formatting.html">Formatting Test</a>
++    
+ 
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 82a62b502ceb5debc891c42f885be9c83115368d
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-18 01:44:07 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-18 01:44:07 +0000
+
+    second commit
+
+diff --git a/.vscode/launch.json b/.vscode/launch.json
+new file mode 100644
+index 0000000..f785063
+--- /dev/null
++++ b/.vscode/launch.json
+@@ -0,0 +1,10 @@
++{
++    "configurations": [
++        {
++            "type": "chrome",
++            "name": "http://127.0.0.1:3000/HTML-LAB/index.html",
++            "request": "launch",
++            "url": "http://127.0.0.1:3000/HTML-LAB/index.html"
++        }
++    ]
++}
+\ No newline at end of file
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+index e69de29..8a65d7b 100644
+--- a/HTML-LAB/formatting.html
++++ b/HTML-LAB/formatting.html
+@@ -0,0 +1,20 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++
++    <h1>HTML Text Formatting</h1>
++    <p>
++        This is a <b>bold</b> text,
++        and this is also a <strong>bold</strong> text.
++
++
++    </p>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index 1acca62..f8b9078 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -7,16 +7,41 @@
+ </head>
+ <body>
+ 
++    <hr>
+     <h1>My Personal Page</h1>
+-    <h2>Prince Marky Panelo</h2>
+     <hr>
++    <h2>Prince Marky Panelo</h2>
+     <p>Bachelor of Science in Information Technology</p>
++    <hr>
+     <h3>About Me</h3>
++    <p>I am a <strong>Web student!</strong> I am a Web student, Sir!!</p>    
+     <hr>
+-    <p>I am a <strong>surgeon!</strong> I am a surgeon, Dr. Han!!</p>    
+     <h3>My Hobbies</h3>
++    <p>I like gaming and photography.</p>
+     <hr>
+-    <p>I like gaming.</p>
++
++    <h1>HTML Text Formatting</h1>
++    <p>
++        This is a <b>bold</b> text,
++        and this is also a <strong>bold</strong> text.
++        <br>
++        This is an <i>italicized text.</i>
++        This is an <em>emphasized text.</em>
++        <br>
++        <u>This entire sentence is underlined</u>. <ins> "ins" was used for this 2nd sentence. </ins>
++        <br>
++        <mark>This is a highlighted line, or a marked line.</mark>
++        <br>
++        <small>This is a small text.</small> <sub>"sub" was used for this second sentence.</sub>
++        <sup>"sup" was used for the third sentence.</sup>
++        <br>
++        <del>This is a "del" text</del>
++        <br>
++        
++        
++
++
++    </p>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+
+commit e2207aff50d4b07df74062813e87bb1551fc034d
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-18 09:14:58 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-18 09:14:58 +0800
+
+    Update README.md
+
+diff --git a/README.md b/README.md
+index 8186433..6a73c15 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+-/DOCTYPE html
++Hello, Prince Marky Panelo!
++
+
+commit 0f15339f8704a2f446ee694261255673dc37cbf2
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-18 00:58:13 +0000
+Commit:     PaneloMarky <shuwacuo@gmail.com>
+CommitDate: 2026-09-18 00:58:13 +0000
+
+    first commit
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+new file mode 100644
+index 0000000..1acca62
+--- /dev/null
++++ b/HTML-LAB/index.html
+@@ -0,0 +1,22 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++
++    <h1>My Personal Page</h1>
++    <h2>Prince Marky Panelo</h2>
++    <hr>
++    <p>Bachelor of Science in Information Technology</p>
++    <h3>About Me</h3>
++    <hr>
++    <p>I am a <strong>surgeon!</strong> I am a surgeon, Dr. Han!!</p>    
++    <h3>My Hobbies</h3>
++    <hr>
++    <p>I like gaming.</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/README.md b/README.md
+index fd99687..8186433 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1 @@
+-# Webtech
+\ No newline at end of file
++/DOCTYPE html
+diff --git a/Webtech b/Webtech
+new file mode 160000
+index 0000000..5c64e1d
+--- /dev/null
++++ b/Webtech
+@@ -0,0 +1 @@
++Subproject commit 5c64e1d1f708869c0cfe139694ec683cddb99626
+
+commit 5c64e1d1f708869c0cfe139694ec683cddb99626
+Author:     PaneloMarky <shuwacuo@gmail.com>
+AuthorDate: 2026-09-16 09:16:44 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-16 09:16:44 +0800
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..fd99687
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# Webtech
+\ No newline at end of file

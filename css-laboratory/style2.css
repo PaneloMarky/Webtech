@@ -4,6 +4,7 @@ body {
 
 h1 {
     color: navy;
+    text-transform: uppercase;
 }
 
 #page-title {
@@ -14,8 +15,22 @@ h1 {
     background-color: #eeeeee;
     padding: 15px;
     margin: 10px;
+    border: 1px solid black;
 }
 
 .card p {
     color: #444444;
+}
+
+.card_unique {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    color: red;
+}
+
+h2, h3 {
+    text-align: center;
+    color: darkviolet;
 }

@@ -53,8 +53,13 @@ main {
     padding: 20px;
     border: 1px solid;
     border-radius: 7px;
-    
+    font-family: 'Times New Roman', Times, serif;
+
     background-color: rgb(182, 92, 162);
     color: white;
+}
+
+.card-container h1 {
+    text-align: center;
 }
 

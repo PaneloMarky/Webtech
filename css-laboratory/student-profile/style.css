@@ -45,6 +45,7 @@ main {
     align-items: stretch;
     gap: 10px;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 
 .card-container {
@@ -62,4 +63,28 @@ main {
 .card-container h1 {
     text-align: center;
 }
+
+footer {
+    background-color: indigo;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+
+#about {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    gap: 30px;
+    flex: 0 0 225px;
+    align-items: center;
+    padding-left: 230px;
+    padding-right: 260px;
+    padding-bottom: 100px;
+}
+
+#about p {
+    text-align: justify;
+}
+
 
